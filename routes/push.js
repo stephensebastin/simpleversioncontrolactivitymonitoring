@@ -12,15 +12,8 @@ module.exports = [
             accesslogger.logRequestDetails(request,'info');
             var responseJSON = {};
         try {
-            var params= request.payload;
-          /*  if(params.commitDetails != undefined && params.commitDetails != null) {
-                var commitDetails = params.commitDetails;
-                commitDetails = JSON.parse(commitDetails); // move to callback 
-                console.log(commitDetails);
-                params.commitDetails= commitDetails;
-
-            }
-                    */
+            var params = request.payload; //pass it as json else need to convert
+        
             var validateParams = await validatePush.schema_push_changes.validateAsync(params);            
             
             var token = await controller.processPush(validateParams);

@@ -7,7 +7,7 @@ async function processPush(pushInfo) {
     var userId = pushInfo.userId; //can use it for validation
     var token =  pushInfo.token;
     var pr_branch_id;
-    var commitDetails = JSON.parse(pushInfo.commitDetails);
+    var commitDetails = pushInfo.commitDetails;
     
     try{       
         if(commitDetails != null && commitDetails.length > 0) {
