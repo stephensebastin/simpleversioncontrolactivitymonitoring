@@ -1,0 +1,918 @@
+{"level":"info","message":"user 7 requested to get branch details with Name TEST_BRANCH","service":"userActivityTracking","timestamp":"2021-09-27 11:17:12"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:17:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:20:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:22:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:24:24"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 11:25:05"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-27 11:25:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:25:20"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 11:25:21"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-27 11:25:21"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 11:25:22"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-27 11:25:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:25:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:26:37"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:26:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:26:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:27:28"}
+{"level":"error","message":"Error while getting list of branches :: Cannot read property 'findAll' of undefined","service":"userActivityTracking","timestamp":"2021-09-27 11:27:30"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:27:37"}
+{"level":"error","message":"Error while getting list of branches :: Cannot read property 'findAll' of undefined","service":"userActivityTracking","timestamp":"2021-09-27 11:27:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:28:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:28:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:28:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:29:12"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:30:00"}
+{"level":"info","message":"user 7 requested to get branch details with ID ","service":"userActivityTracking","timestamp":"2021-09-27 11:32:05"}
+{"level":"info","message":"Error while user 7 requested to get branch details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 11:32:05"}
+{"level":"error","message":"Error while getting branch Details :: invalid input syntax for type integer: \"\"","service":"userActivityTracking","timestamp":"2021-09-27 11:32:05"}
+{"level":"info","message":"user 7 requested to get branch details with ID 22","service":"userActivityTracking","timestamp":"2021-09-27 11:32:10"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_23","service":"userActivityTracking","timestamp":"2021-09-27 11:32:42"}
+{"level":"info","message":"user 7 requested to get branch details with ID 23","service":"userActivityTracking","timestamp":"2021-09-27 11:33:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:36:55"}
+{"level":"error","message":"Error while getting list of branches :: branch is not defined","service":"userActivityTracking","timestamp":"2021-09-27 11:36:57"}
+{"level":"error","message":"Error while getting list of branches :: branch is not defined","service":"userActivityTracking","timestamp":"2021-09-27 11:37:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:37:20"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:38:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:39:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:39:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:39:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:39:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:40:13"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:40:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:43:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:44:00"}
+{"level":"error","message":"Error while getting list of branches :: branchList[i].toJSONForList is not a function","service":"userActivityTracking","timestamp":"2021-09-27 11:44:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:45:03"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:45:13"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:46:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:47:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:47:56"}
+{"level":"error","message":"Error while getting list of branches :: id is not defined","service":"userActivityTracking","timestamp":"2021-09-27 11:48:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:48:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:48:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:57:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:58:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:59:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:59:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 11:59:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:00:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:00:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:01:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:01:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:01:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:01:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:02:48"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:03:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:03:12"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:03:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:05:17"}
+{"level":"info","message":"new file created :: file110.js","service":"userActivityTracking","timestamp":"2021-09-27 12:05:19"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:05:25"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:05:44"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:05:46"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:05:51"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:05:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:06:22"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:06:28"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:06:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:11:51"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:11:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:14:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:15:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:21:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:23:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:24:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:28:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:29:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:29:58"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:30:29"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:30:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:31:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:32:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:33:07"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:33:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:33:28"}
+{"level":"info","message":"new file created :: file10.js","service":"userActivityTracking","timestamp":"2021-09-27 12:33:32"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:33:33"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:33:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:34:21"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:34:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:34:29"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:34:29"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:34:36"}
+{"level":"info","message":"new file created :: file11 .js","service":"userActivityTracking","timestamp":"2021-09-27 12:34:39"}
+{"level":"info","message":"new file created :: file114.js","service":"userActivityTracking","timestamp":"2021-09-27 12:34:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:35:41"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:35:42"}
+{"level":"info","message":"new file created :: file118.js","service":"userActivityTracking","timestamp":"2021-09-27 12:35:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:36:00"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:36:02"}
+{"level":"info","message":"new file created :: file1228.js","service":"userActivityTracking","timestamp":"2021-09-27 12:36:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:37:47"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 12:37:49"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 12:37:52"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 12:38:17"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:38:31"}
+{"level":"info","message":"new file created :: file1220.js","service":"userActivityTracking","timestamp":"2021-09-27 12:38:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:38:57"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:39:02"}
+{"level":"info","message":"new file created :: file12211.js","service":"userActivityTracking","timestamp":"2021-09-27 12:39:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:40:03"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:40:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:41:06"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:41:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:41:20"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:42:09"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:42:30"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:42:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:43:31"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:43:45"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:43:47"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:44:14"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:44:21"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:44:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:44:44"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:44:51"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:44:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:45:31"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:45:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:45:44"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:45:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:46:35"}
+{"level":"error","message":"Server Start Failed listen EADDRINUSE: address already in use 127.0.0.1:3000","service":"userActivityTracking","timestamp":"2021-09-27 12:47:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:47:09"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 12:47:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:49:15"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:49:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:50:15"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:50:17"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:50:47"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:50:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:51:12"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 12:51:14"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:51:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 12:52:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:06:13"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 13:06:37"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:07:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:07:26"}
+{"level":"info","message":"new file created :: file122211.js","service":"userActivityTracking","timestamp":"2021-09-27 13:07:35"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 13:07:48"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 13:08:00"}
+{"level":"info","message":"Record Deleted :: 9","service":"userActivityTracking","timestamp":"2021-09-27 13:14:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:17:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:17:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:19:31"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:20:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:20:31"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:20:42"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"branch_id\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-27 13:20:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:22:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:22:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:23:54"}
+{"level":"info","message":"File Deleted :: file122211.js","service":"userActivityTracking","timestamp":"2021-09-27 13:23:55"}
+{"level":"info","message":"File Deleted :: file12211.js","service":"userActivityTracking","timestamp":"2021-09-27 13:24:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:27:03"}
+{"level":"info","message":"File Deleted :: file1220.js","service":"userActivityTracking","timestamp":"2021-09-27 13:27:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:28:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:31:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:31:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:32:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:34:36"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:45:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:46:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:46:37"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:46:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:47:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:48:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:51:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:51:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:51:56"}
+{"level":"error","message":"Error while getting list of branches :: Branch doesn't exist.","service":"userActivityTracking","timestamp":"2021-09-27 13:52:09"}
+{"level":"error","message":"Error while getting list of branches :: Branch doesn't exist.","service":"userActivityTracking","timestamp":"2021-09-27 13:52:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:54:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:54:10"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 21","service":"userActivityTracking","timestamp":"2021-09-27 13:54:33"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 10","service":"userActivityTracking","timestamp":"2021-09-27 13:55:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:55:14"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 8","service":"userActivityTracking","timestamp":"2021-09-27 13:55:17"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 13:55:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:56:26"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 13:56:36"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:57:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:57:46"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 13:57:48"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 13:58:30"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 1243","service":"userActivityTracking","timestamp":"2021-09-27 13:58:34"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 13:58:34"}
+{"level":"error","message":"Error while getting changeset Details :: Changeset details not found","service":"userActivityTracking","timestamp":"2021-09-27 13:58:34"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 13:58:37"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:00:45"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:00:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:01:19"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:01:21"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:01:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:02:22"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:02:24"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 14:02:24"}
+{"level":"error","message":"Error while getting changeset Details :: changeset.dataValues.toJSON is not a function","service":"userActivityTracking","timestamp":"2021-09-27 14:02:24"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:02:30"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:02:31"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:02:58"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:03:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:03:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:03:30"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:03:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:04:08"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:04:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:04:18"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:04:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:04:29"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:04:30"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:05:11"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:05:12"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:05:21"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:05:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:07:10"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:07:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:07:16"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:07:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:07:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:07:30"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 124","service":"userActivityTracking","timestamp":"2021-09-27 14:07:32"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:12:21"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:14:14"}
+{"level":"info","message":"user undefined requested to get changeset details with ID undefined","service":"userActivityTracking","timestamp":"2021-09-27 14:14:54"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 14:14:54"}
+{"level":"error","message":"Error while getting changeset Details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-27 14:14:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:15:32"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:15:46"}
+{"level":"info","message":"user undefined requested to get details about the files with name file8.js","service":"userActivityTracking","timestamp":"2021-09-27 14:15:48"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 14:15:48"}
+{"level":"error","message":"Error while getting changeset Details :: branchId is not defined","service":"userActivityTracking","timestamp":"2021-09-27 14:15:48"}
+{"level":"info","message":"user undefined requested to get details about the files with name file8.js","service":"userActivityTracking","timestamp":"2021-09-27 14:16:06"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 14:16:06"}
+{"level":"error","message":"Error while getting changeset Details :: branchId is not defined","service":"userActivityTracking","timestamp":"2021-09-27 14:16:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:16:25"}
+{"level":"info","message":"user undefined requested to get details about the files with name file8.js","service":"userActivityTracking","timestamp":"2021-09-27 14:16:26"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 14:16:26"}
+{"level":"error","message":"Error while getting changeset Details :: column fileinfo.name does not exist","service":"userActivityTracking","timestamp":"2021-09-27 14:16:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:16:45"}
+{"level":"info","message":"user undefined requested to get details about the files with name file8.js","service":"userActivityTracking","timestamp":"2021-09-27 14:16:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:17:45"}
+{"level":"info","message":"user undefined requested to get details about the files with name file8.js","service":"userActivityTracking","timestamp":"2021-09-27 14:17:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:20:23"}
+{"level":"info","message":"user undefined requested to get details about the files with name file8.js","service":"userActivityTracking","timestamp":"2021-09-27 14:20:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:20:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:21:33"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  7","service":"userActivityTracking","timestamp":"2021-09-27 14:21:48"}
+{"level":"error","message":"Error while getting changeset Details :: fileInfo need name to query","service":"userActivityTracking","timestamp":"2021-09-27 14:21:48"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  7","service":"userActivityTracking","timestamp":"2021-09-27 14:21:54"}
+{"level":"error","message":"Error while getting changeset Details :: fileInfo need name to query","service":"userActivityTracking","timestamp":"2021-09-27 14:21:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:22:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:22:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:23:05"}
+{"level":"info","message":"Error while getting user 7 details}","service":"userActivityTracking","timestamp":"2021-09-27 14:23:07"}
+{"level":"error","message":"Error while getting changeset Details :: reqInfo is not defined","service":"userActivityTracking","timestamp":"2021-09-27 14:23:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:23:21"}
+{"level":"info","message":"user details requested for ID 7","service":"userActivityTracking","timestamp":"2021-09-27 14:23:21"}
+{"level":"info","message":"user details requested for ID 8","service":"userActivityTracking","timestamp":"2021-09-27 14:23:27"}
+{"level":"info","message":"Error while getting user 8 details}","service":"userActivityTracking","timestamp":"2021-09-27 14:23:27"}
+{"level":"error","message":"Error while getting changeset Details :: User details not found","service":"userActivityTracking","timestamp":"2021-09-27 14:23:27"}
+{"level":"info","message":"user details requested for ID 9","service":"userActivityTracking","timestamp":"2021-09-27 14:23:29"}
+{"level":"info","message":"Error while getting user 9 details}","service":"userActivityTracking","timestamp":"2021-09-27 14:23:29"}
+{"level":"error","message":"Error while getting changeset Details :: User details not found","service":"userActivityTracking","timestamp":"2021-09-27 14:23:29"}
+{"level":"info","message":"user details requested for ID 11","service":"userActivityTracking","timestamp":"2021-09-27 14:23:33"}
+{"level":"info","message":"Error while getting user 11 details}","service":"userActivityTracking","timestamp":"2021-09-27 14:23:33"}
+{"level":"error","message":"Error while getting changeset Details :: User details not found","service":"userActivityTracking","timestamp":"2021-09-27 14:23:33"}
+{"level":"info","message":"user details requested for ID 7","service":"userActivityTracking","timestamp":"2021-09-27 14:23:35"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-27 14:23:38"}
+{"level":"info","message":"Error while getting user 1 details}","service":"userActivityTracking","timestamp":"2021-09-27 14:23:38"}
+{"level":"error","message":"Error while getting changeset Details :: User details not found","service":"userActivityTracking","timestamp":"2021-09-27 14:23:38"}
+{"level":"info","message":"user details requested for ID 7","service":"userActivityTracking","timestamp":"2021-09-27 14:23:40"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:34:35"}
+{"level":"info","message":"new file created :: dsds.ds","service":"userActivityTracking","timestamp":"2021-09-27 14:36:36"}
+{"level":"info","message":"user details requested for ID 7","service":"userActivityTracking","timestamp":"2021-09-27 14:36:49"}
+{"level":"error","message":"Deletion error :: update or delete on table \"branches\" violates foreign key constraint \"changesets_branch_id_fkey\" on table \"changesets\"","service":"userActivityTracking","timestamp":"2021-09-27 14:37:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:41:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:42:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:42:03"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 14:42:06"}
+{"level":"error","message":"Deletion error :: update or delete on table \"branches\" violates foreign key constraint \"changesets_branch_id_fkey\" on table \"changesets\"","service":"userActivityTracking","timestamp":"2021-09-27 14:42:13"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 14:42:31"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 14:42:36"}
+{"level":"error","message":"Deletion error :: update or delete on table \"branches\" violates foreign key constraint \"changesets_branch_id_fkey\" on table \"changesets\"","service":"userActivityTracking","timestamp":"2021-09-27 14:42:42"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 14:43:04"}
+{"level":"error","message":"Deletion error :: update or delete on table \"branches\" violates foreign key constraint \"changesets_branch_id_fkey\" on table \"changesets\"","service":"userActivityTracking","timestamp":"2021-09-27 14:43:10"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:39:08"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:41:14"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:41:28"}
+{"level":"error","message":"Deletion error :: null value in column \"branch_id\" violates not-null constraint","service":"userActivityTracking","timestamp":"2021-09-27 15:41:37"}
+{"level":"error","message":"DB Connection Failed Unknown constraint error","service":"userActivityTracking","timestamp":"2021-09-27 15:42:29"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:42:35"}
+{"level":"error","message":"Deletion error :: update or delete on table \"branches\" violates foreign key constraint \"fileinfos_branch_id_fkey\" on table \"fileinfos\"","service":"userActivityTracking","timestamp":"2021-09-27 15:42:43"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:43:09"}
+{"level":"error","message":"Deletion error :: update or delete on table \"branches\" violates foreign key constraint \"fileinfos_branch_id_fkey\" on table \"fileinfos\"","service":"userActivityTracking","timestamp":"2021-09-27 15:43:18"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:44:43"}
+{"level":"error","message":"Deletion error :: update or delete on table \"branches\" violates foreign key constraint \"fileinfos_branch_id_fkey\" on table \"fileinfos\"","service":"userActivityTracking","timestamp":"2021-09-27 15:44:48"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:48:21"}
+{"level":"info","message":"Record Deleted :: 23","service":"userActivityTracking","timestamp":"2021-09-27 15:48:32"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:50:35"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:51:00"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:51:17"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 15:51:55"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 16:54:09"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 16:54:43"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:18:31"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:18:37"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:20:00"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:20:22"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:24:44"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:27:44"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:33:30"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:33:35"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:34:54"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:35:30"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:41:46"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 17:48:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:22:49"}
+{"level":"info","message":"new user added :: 1","service":"userActivityTracking","timestamp":"2021-09-27 18:23:56"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_20","service":"userActivityTracking","timestamp":"2021-09-27 18:24:15"}
+{"level":"info","message":"new pull request created  :: f0d5df67-5796-47bd-9173-f2813f4aac02","service":"userActivityTracking","timestamp":"2021-09-27 18:26:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:28:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:28:46"}
+{"level":"info","message":"new file created :: dsds.ds","service":"userActivityTracking","timestamp":"2021-09-27 18:28:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:31:50"}
+{"level":"info","message":"new file created :: dsds.ds","service":"userActivityTracking","timestamp":"2021-09-27 18:32:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:36:32"}
+{"level":"info","message":"Database sync success","service":"userActivityTracking","timestamp":"2021-09-27 18:37:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:37:21"}
+{"level":"info","message":"new user added :: 1","service":"userActivityTracking","timestamp":"2021-09-27 18:40:43"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_20","service":"userActivityTracking","timestamp":"2021-09-27 18:40:46"}
+{"level":"info","message":"new pull request created  :: d16e63e2-eb44-42ce-839b-22c8bcfbca14","service":"userActivityTracking","timestamp":"2021-09-27 18:40:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:42:03"}
+{"level":"info","message":"new pull request created  :: e7904110-eeb1-47a3-876c-4ceff0f758d3","service":"userActivityTracking","timestamp":"2021-09-27 18:42:08"}
+{"level":"error","message":" Error occurred while checkin :: Pull request details not present.. Cannot proceed checkin","service":"userActivityTracking","timestamp":"2021-09-27 18:46:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:49:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:53:03"}
+{"level":"error","message":" Error occurred while checkin :: notNull Violation: changesets.user_id cannot be null","service":"userActivityTracking","timestamp":"2021-09-27 18:53:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:54:23"}
+{"level":"error","message":" Error occurred while checkin :: notNull Violation: changesets.user_id cannot be null","service":"userActivityTracking","timestamp":"2021-09-27 18:54:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 18:55:13"}
+{"level":"error","message":" Error occurred while checkin :: file8.js not exists to update row ","service":"userActivityTracking","timestamp":"2021-09-27 18:55:19"}
+{"level":"info","message":"File creation success for file14.js","service":"userActivityTracking","timestamp":"2021-09-27 18:55:42"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 1 from 1","service":"userActivityTracking","timestamp":"2021-09-27 18:55:42"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 18:56:01"}
+{"level":"info","message":"File creation success for file290.js","service":"userActivityTracking","timestamp":"2021-09-27 18:57:03"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 1 from 1","service":"userActivityTracking","timestamp":"2021-09-27 18:57:03"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 18:57:25"}
+{"level":"error","message":" Error occurred while checkin :: file8.js not exists to update row ","service":"userActivityTracking","timestamp":"2021-09-27 18:57:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:01:37"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:04:09"}
+{"level":"info","message":"new file created :: file8.js","service":"userActivityTracking","timestamp":"2021-09-27 19:04:11"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:04:28"}
+{"level":"error","message":" Error occurred while checkin :: file6.js not exists to update row ","service":"userActivityTracking","timestamp":"2021-09-27 19:04:52"}
+{"level":"info","message":"new file created :: file6.js","service":"userActivityTracking","timestamp":"2021-09-27 19:05:11"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:05:23"}
+{"level":"info","message":"File creation success for file1.js","service":"userActivityTracking","timestamp":"2021-09-27 19:05:47"}
+{"level":"info","message":"File creation success for file2.js","service":"userActivityTracking","timestamp":"2021-09-27 19:05:47"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 1 from 1","service":"userActivityTracking","timestamp":"2021-09-27 19:05:47"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:05:59"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:06:18"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-27 19:06:53"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-27 19:06:53"}
+{"level":"info","message":"File creation success for file11.js","service":"userActivityTracking","timestamp":"2021-09-27 19:07:29"}
+{"level":"info","message":"File creation success for file12.js","service":"userActivityTracking","timestamp":"2021-09-27 19:07:29"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 1 from 1","service":"userActivityTracking","timestamp":"2021-09-27 19:07:29"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:09:58"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:10:37"}
+{"level":"info","message":"File Deleted :: file1.js","service":"userActivityTracking","timestamp":"2021-09-27 19:11:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:12:05"}
+{"level":"error","message":"Used creation error :: Validation error","service":"userActivityTracking","timestamp":"2021-09-27 19:12:56"}
+{"level":"info","message":"new user added :: 3","service":"userActivityTracking","timestamp":"2021-09-27 19:13:00"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_21","service":"userActivityTracking","timestamp":"2021-09-27 19:13:28"}
+{"level":"info","message":"new pull request created  :: 6e46dfe3-88c1-4e14-84ce-3a29d91124eb","service":"userActivityTracking","timestamp":"2021-09-27 19:13:49"}
+{"level":"error","message":" Error occurred while checkin :: invalid input syntax for type uuid: \"-88c1-4e14-84ce-3a29d91124eb\"","service":"userActivityTracking","timestamp":"2021-09-27 19:14:09"}
+{"level":"error","message":" Error occurred while checkin :: Pull request details not present.. Cannot proceed checkin","service":"userActivityTracking","timestamp":"2021-09-27 19:14:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:16:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:17:25"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:19:41"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-27 19:19:42"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-27 19:19:42"}
+{"level":"info","message":"File creation success for file111.js","service":"userActivityTracking","timestamp":"2021-09-27 19:20:01"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 2 from 3","service":"userActivityTracking","timestamp":"2021-09-27 19:20:01"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:22:29"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:22:39"}
+{"level":"info","message":"File creation success for file175.js","service":"userActivityTracking","timestamp":"2021-09-27 19:23:04"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 2 from 3","service":"userActivityTracking","timestamp":"2021-09-27 19:23:04"}
+{"level":"info","message":"new pull request created  :: 6a2dc6db-1743-4529-9939-f22b3ccbaaec","service":"userActivityTracking","timestamp":"2021-09-27 19:24:13"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-27 19:24:45"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-27 19:24:45"}
+{"level":"info","message":"File creation success for file105.js","service":"userActivityTracking","timestamp":"2021-09-27 19:24:57"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 1 from 3","service":"userActivityTracking","timestamp":"2021-09-27 19:24:57"}
+{"level":"info","message":"new pull request created  :: 6b1c0123-4b57-4755-b33c-3db955a3847f","service":"userActivityTracking","timestamp":"2021-09-27 19:25:07"}
+{"level":"error","message":" Error occurred while checkin :: User ID not matches with pull token.. Cannot proceed checkin","service":"userActivityTracking","timestamp":"2021-09-27 19:25:16"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:25:19"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-27 19:25:39"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-27 19:25:39"}
+{"level":"info","message":"File creation success for file195.js","service":"userActivityTracking","timestamp":"2021-09-27 19:25:49"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 2 from 1","service":"userActivityTracking","timestamp":"2021-09-27 19:25:49"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-27 19:25:52"}
+{"level":"info","message":"File creation success for file165.js","service":"userActivityTracking","timestamp":"2021-09-27 19:26:12"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 2 from 1","service":"userActivityTracking","timestamp":"2021-09-27 19:26:12"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-27 19:29:56"}
+{"level":"info","message":"user details requested for ID 3","service":"userActivityTracking","timestamp":"2021-09-27 19:29:58"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:38:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:40:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 19:40:13"}
+{"level":"info","message":"Record Deleted :: 3","service":"userActivityTracking","timestamp":"2021-09-27 19:41:07"}
+{"level":"info","message":"Record Deleted :: TEST_BRANCH_21","service":"userActivityTracking","timestamp":"2021-09-27 19:45:25"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:34:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:36:40"}
+{"level":"info","message":"new user added :: 4","service":"userActivityTracking","timestamp":"2021-09-27 20:40:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:49:41"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 20:49:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:51:57"}
+{"level":"error","message":"Error while updating user details :: obj is not defined","service":"userActivityTracking","timestamp":"2021-09-27 20:52:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:52:23"}
+{"level":"error","message":"Error while updating user details :: reqInfo.hasOwnProperty is not a function","service":"userActivityTracking","timestamp":"2021-09-27 20:52:25"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:52:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:53:04"}
+{"level":"error","message":"Error while updating user details :: reqInfo.hasOwnProperty is not a function","service":"userActivityTracking","timestamp":"2021-09-27 20:53:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:53:40"}
+{"level":"error","message":"Error while updating user details :: reqInfo.hasOwnProperty is not a function","service":"userActivityTracking","timestamp":"2021-09-27 20:53:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:53:55"}
+{"level":"error","message":"Error while updating user details :: reqInfo.hasOwnProperty is not a function","service":"userActivityTracking","timestamp":"2021-09-27 20:53:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:54:15"}
+{"level":"error","message":"Error while updating user details :: Cannot convert object to primitive value","service":"userActivityTracking","timestamp":"2021-09-27 20:54:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:54:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:55:22"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 20:55:23"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:55:37"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 20:55:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:55:59"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:57:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:58:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:58:49"}
+{"level":"error","message":"Error while updating user details :: updateValues.set is not a function","service":"userActivityTracking","timestamp":"2021-09-27 20:58:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:59:16"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 20:59:49"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 20:59:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:00:26"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 21:00:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:00:44"}
+{"level":"error","message":"Error while updating user details :: column \"userId\" does not exist","service":"userActivityTracking","timestamp":"2021-09-27 21:00:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:01:33"}
+{"level":"error","message":"Error while updating user details :: column \"userId\" does not exist","service":"userActivityTracking","timestamp":"2021-09-27 21:01:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:01:58"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 21:02:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:02:27"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 21:02:30"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 21:02:36"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:02:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:03:00"}
+{"level":"error","message":"Error while updating user details :: Cannot convert undefined or null to object","service":"userActivityTracking","timestamp":"2021-09-27 21:03:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:03:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:04:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:04:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:04:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:05:04"}
+{"level":"error","message":"Error while updating user details :: updateValues.length is not a function","service":"userActivityTracking","timestamp":"2021-09-27 21:05:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:05:25"}
+{"level":"error","message":"Error while updating user details :: Cannot read property 'length' of undefined","service":"userActivityTracking","timestamp":"2021-09-27 21:05:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:05:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:06:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:09:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:10:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:11:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:11:02"}
+{"level":"error","message":"Error while updating user details :: Update value must be mentioned","service":"userActivityTracking","timestamp":"2021-09-27 21:11:06"}
+{"level":"info","message":"new user added :: 5","service":"userActivityTracking","timestamp":"2021-09-27 21:11:24"}
+{"level":"info","message":"new user added :: 6","service":"userActivityTracking","timestamp":"2021-09-27 21:11:29"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:13:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:14:08"}
+{"level":"error","message":"Error while getting list of branches :: User info is not present.","service":"userActivityTracking","timestamp":"2021-09-27 21:15:46"}
+{"level":"error","message":"Error while getting list of branches :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-27 21:15:57"}
+{"level":"error","message":"Error while getting list of branches :: User info is not present.","service":"userActivityTracking","timestamp":"2021-09-27 21:16:03"}
+{"level":"error","message":"Error while getting list of branches :: User info is not present.","service":"userActivityTracking","timestamp":"2021-09-27 21:16:23"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:17:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:17:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:19:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:19:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:23:31"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:24:26"}
+{"level":"error","message":"Error while updating user details :: invalid input syntax for type integer: \"[object Object]\"","service":"userActivityTracking","timestamp":"2021-09-27 21:24:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:25:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:27:22"}
+{"level":"error","message":"Error while updating user details :: Op is not defined","service":"userActivityTracking","timestamp":"2021-09-27 21:27:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:27:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:28:24"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:28:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:28:58"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:29:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:29:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:29:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:30:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:30:36"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:30:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 21:31:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 22:54:29"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 22:59:31"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:16:23"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:18:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:23:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:24:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:26:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:27:16"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:30:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:30:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:33:34"}
+{"level":"info","message":"user undefined requested to get changeset details with ID undefined","service":"userActivityTracking","timestamp":"2021-09-27 23:34:35"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 23:34:35"}
+{"level":"error","message":"Error while getting changeset Details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-27 23:34:35"}
+{"level":"info","message":"user undefined requested to get changeset details with ID undefined","service":"userActivityTracking","timestamp":"2021-09-27 23:34:38"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 23:34:38"}
+{"level":"error","message":"Error while getting changeset Details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-27 23:34:38"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-27 23:36:32"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 23:36:35"}
+{"level":"error","message":"Error while getting changeset Details :: changeset ID needed to query","service":"userActivityTracking","timestamp":"2021-09-27 23:36:35"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-27 23:36:38"}
+{"level":"error","message":"Error while getting changeset Details :: changeset ID needed to query","service":"userActivityTracking","timestamp":"2021-09-27 23:36:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:37:03"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-27 23:37:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:37:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:43:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:54:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:54:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-27 23:54:48"}
+{"level":"error","message":"Server Start Failed server.validator is not a function","service":"userActivityTracking","timestamp":"2021-09-28 07:50:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 07:50:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 07:51:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 08:21:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 08:22:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 08:22:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:17:14"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:22:32"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:24:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:26:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:30:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:32:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:32:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:32:48"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:33:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:33:21"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:33:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:34:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:35:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:36:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:36:17"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_24","service":"userActivityTracking","timestamp":"2021-09-28 10:36:18"}
+{"level":"error","message":"Branch creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"branches\" (\"id\",\"name\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3) RETURNING \"id\",\"name\",\"description\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-28 10:37:03"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_25","service":"userActivityTracking","timestamp":"2021-09-28 10:37:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:39:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:42:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:42:50"}
+{"level":"error","message":"Branch creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"branches\" (\"id\",\"name\",\"description\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"name\",\"description\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-28 10:43:06"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_25_","service":"userActivityTracking","timestamp":"2021-09-28 10:43:13"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:43:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:44:12"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_22","service":"userActivityTracking","timestamp":"2021-09-28 10:44:16"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:44:32"}
+{"level":"info","message":"new branch created :: TEST_BRANCH_211","service":"userActivityTracking","timestamp":"2021-09-28 10:44:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:53:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:54:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:55:14"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 10:56:51"}
+{"level":"info","message":"Record Deleted :: TEST_BRANCH_211","service":"userActivityTracking","timestamp":"2021-09-28 10:57:01"}
+{"level":"info","message":"No record found for :: 10","service":"userActivityTracking","timestamp":"2021-09-28 10:57:16"}
+{"level":"info","message":"Record Deleted :: 8","service":"userActivityTracking","timestamp":"2021-09-28 10:57:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:02:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:03:18"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:03:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:04:18"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:04:20"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:04:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:05:10"}
+{"level":"info","message":"No record found for :: 8","service":"userActivityTracking","timestamp":"2021-09-28 11:05:13"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:05:31"}
+{"level":"info","message":"No record found for :: 8","service":"userActivityTracking","timestamp":"2021-09-28 11:05:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:05:51"}
+{"level":"info","message":"No record found for :: 8","service":"userActivityTracking","timestamp":"2021-09-28 11:05:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:06:20"}
+{"level":"info","message":"No record found for :: 8","service":"userActivityTracking","timestamp":"2021-09-28 11:06:23"}
+{"level":"info","message":"User 1 tried to delete branch with 8","service":"userActivityTracking","timestamp":"2021-09-28 11:06:23"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:10:44"}
+{"level":"info","message":"No record found for :: 8","service":"userActivityTracking","timestamp":"2021-09-28 11:10:47"}
+{"level":"info","message":"User 1 tried to delete branch with 8","service":"userActivityTracking","timestamp":"2021-09-28 11:10:47"}
+{"level":"info","message":"No record found for :: TEST_BRANCH_211","service":"userActivityTracking","timestamp":"2021-09-28 11:10:56"}
+{"level":"info","message":"User 1 tried to delete branch with TEST_BRANCH_211","service":"userActivityTracking","timestamp":"2021-09-28 11:10:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:17:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:19:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:32:03"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:37:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:38:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:39:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:39:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:40:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:40:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:40:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:41:21"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:41:23"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:41:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:42:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:44:21"}
+{"level":"info","message":"new pull request created  :: 493d3986-74bc-4cd2-bb56-f74ab01e0afa","service":"userActivityTracking","timestamp":"2021-09-28 11:45:03"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 11:46:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:03:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:04:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:04:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:07:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:08:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:08:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:08:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:08:50"}
+{"level":"error","message":"File creation error :: Validation error ::SequelizeUniqueConstraintError  :: INSERT INTO \"fileinfos\" (\"id\",\"filename\",\"createdAt\",\"updatedAt\",\"branchId\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"filename\",\"createdAt\",\"updatedAt\",\"branchId\";","service":"userActivityTracking","timestamp":"2021-09-28 12:08:54"}
+{"level":"info","message":"new file created :: file6s.js","service":"userActivityTracking","timestamp":"2021-09-28 12:08:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:13:16"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:15:29"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:16:36"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:16:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:16:59"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:17:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:17:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:18:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:18:12"}
+{"level":"info","message":"File Deleted :: file6s.js","service":"userActivityTracking","timestamp":"2021-09-28 12:18:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:19:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:20:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:20:16"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:22:54"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-28 12:23:15"}
+{"level":"error","message":"Error while getting changeset Details :: fileInfo need name to query","service":"userActivityTracking","timestamp":"2021-09-28 12:23:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:23:58"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-28 12:24:02"}
+{"level":"error","message":"Error while getting changeset Details :: fileInfo need name to query","service":"userActivityTracking","timestamp":"2021-09-28 12:24:02"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-28 12:24:08"}
+{"level":"error","message":"Error while getting changeset Details :: fileInfo need name to query","service":"userActivityTracking","timestamp":"2021-09-28 12:24:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:24:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:24:53"}
+{"level":"info","message":"user undefined requested to get details about the files with name file6.js","service":"userActivityTracking","timestamp":"2021-09-28 12:24:56"}
+{"level":"info","message":"user undefined requested to get details about the files with name file6.js","service":"userActivityTracking","timestamp":"2021-09-28 12:24:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:25:43"}
+{"level":"info","message":"user undefined requested to get details about the files with name file6.js","service":"userActivityTracking","timestamp":"2021-09-28 12:25:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:26:51"}
+{"level":"info","message":"user undefined requested to get details about the files with name file6.js","service":"userActivityTracking","timestamp":"2021-09-28 12:26:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:27:58"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:30:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:30:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:31:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:33:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:33:56"}
+{"level":"info","message":"User 1 requested to get all pullerequests.","service":"userActivityTracking","timestamp":"2021-09-28 12:33:58"}
+{"level":"info","message":"User 1 requested to get all pullerequests.","service":"userActivityTracking","timestamp":"2021-09-28 12:34:23"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:41:09"}
+{"level":"error","message":"Error while updating branch details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 12:41:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:42:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:43:03"}
+{"level":"error","message":"Error while updating branch details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 12:43:06"}
+{"level":"error","message":"Error while updating branch details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 12:43:15"}
+{"level":"error","message":"Error while updating branch details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 12:43:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:44:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:46:25"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:46:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:48:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:48:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:48:57"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:49:30"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:49:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:51:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:52:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:55:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:55:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:56:01"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:56:07"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:56:07"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:56:08"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:56:08"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:56:15"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:56:15"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:56:18"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:56:18"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:57:03"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:57:03"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:57:03"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:57:04"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:57:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:57:56"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:57:59"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:57:59"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:58:22"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:58:22"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:58:25"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:58:25"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:58:45"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:58:45"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:58:52"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:58:52"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:58:55"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:58:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:59:10"}
+{"level":"info","message":"Error while user undefined requested to get branch details with  [object Promise]","service":"userActivityTracking","timestamp":"2021-09-28 12:59:11"}
+{"level":"error","message":"Error while getting branch Details :: branch ID or name must be present to query","service":"userActivityTracking","timestamp":"2021-09-28 12:59:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 12:59:26"}
+{"level":"info","message":"user undefined requested to get branch details with ID 1","service":"userActivityTracking","timestamp":"2021-09-28 12:59:31"}
+{"level":"info","message":"user 7 requested to get branch details with Name TEST_BRANCH_20","service":"userActivityTracking","timestamp":"2021-09-28 12:59:36"}
+{"level":"info","message":"user 7 requested to get branch details with Name TEST_BRANCH_22","service":"userActivityTracking","timestamp":"2021-09-28 12:59:38"}
+{"level":"info","message":"user 7 requested to get branch details with Name TEST_BRANCH_21","service":"userActivityTracking","timestamp":"2021-09-28 12:59:40"}
+{"level":"info","message":"user 7 requested to get branch details with Name TEST_BRANCH_24","service":"userActivityTracking","timestamp":"2021-09-28 12:59:46"}
+{"level":"info","message":"user undefined requested to get branch details with ID 1","service":"userActivityTracking","timestamp":"2021-09-28 12:59:53"}
+{"level":"info","message":"user undefined requested to get branch details with ID 1","service":"userActivityTracking","timestamp":"2021-09-28 12:59:55"}
+{"level":"info","message":"user undefined requested to get branch details with ID 1","service":"userActivityTracking","timestamp":"2021-09-28 13:00:32"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:01:01"}
+{"level":"info","message":"User 1 requested to get all pullerequests.","service":"userActivityTracking","timestamp":"2021-09-28 13:01:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:01:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:02:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:02:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:03:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:03:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:03:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:03:40"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:04:18"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:05:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 13:06:25"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:10:20"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:11:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:15:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:16:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:16:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:18:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:18:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:19:26"}
+{"level":"error","message":"Used creation error :: Validation error","service":"userActivityTracking","timestamp":"2021-09-28 16:19:40"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:20:21"}
+{"level":"error","message":"Used creation error :: Validation error","service":"userActivityTracking","timestamp":"2021-09-28 16:20:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:33:35"}
+{"level":"error","message":"Used creation error :: Validation error","service":"userActivityTracking","timestamp":"2021-09-28 16:33:37"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:36:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:36:51"}
+{"level":"error","message":"Used creation error :: Validation error","service":"userActivityTracking","timestamp":"2021-09-28 16:36:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:37:02"}
+{"level":"error","message":"Used creation error :: Validation error","service":"userActivityTracking","timestamp":"2021-09-28 16:37:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:37:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:37:24"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:37:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:38:31"}
+{"level":"info","message":"new user added :: 15","service":"userActivityTracking","timestamp":"2021-09-28 16:38:48"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:39:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:39:58"}
+{"level":"info","message":"new user added :: 18","service":"userActivityTracking","timestamp":"2021-09-28 16:40:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:41:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:41:36"}
+{"level":"info","message":"No record found for :: 3","service":"userActivityTracking","timestamp":"2021-09-28 16:41:52"}
+{"level":"info","message":"No record found for :: 8","service":"userActivityTracking","timestamp":"2021-09-28 16:41:54"}
+{"level":"info","message":"No record found for :: 7","service":"userActivityTracking","timestamp":"2021-09-28 16:41:56"}
+{"level":"info","message":"No record found for :: 0","service":"userActivityTracking","timestamp":"2021-09-28 16:41:59"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:42:08"}
+{"level":"info","message":"Record Deleted :: 6","service":"userActivityTracking","timestamp":"2021-09-28 16:42:12"}
+{"level":"info","message":"Error while getting user undefined details}","service":"userActivityTracking","timestamp":"2021-09-28 16:44:19"}
+{"level":"error","message":"Error while getting changeset Details :: User ID needed to query","service":"userActivityTracking","timestamp":"2021-09-28 16:44:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:44:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:45:03"}
+{"level":"info","message":"Error while getting user undefined details}","service":"userActivityTracking","timestamp":"2021-09-28 16:45:04"}
+{"level":"error","message":"Error while getting changeset Details :: User ID needed to query","service":"userActivityTracking","timestamp":"2021-09-28 16:45:04"}
+{"level":"info","message":"Error while getting user undefined details}","service":"userActivityTracking","timestamp":"2021-09-28 16:45:05"}
+{"level":"error","message":"Error while getting changeset Details :: User ID needed to query","service":"userActivityTracking","timestamp":"2021-09-28 16:45:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:45:12"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:45:21"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:45:25"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:47:14"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:15"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:16"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:16"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:16"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:16"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:16"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:28"}
+{"level":"info","message":"user details requested for ID 1","service":"userActivityTracking","timestamp":"2021-09-28 16:47:41"}
+{"level":"info","message":"user details requested for ID 11","service":"userActivityTracking","timestamp":"2021-09-28 16:48:31"}
+{"level":"info","message":"Error while getting user 11 details}","service":"userActivityTracking","timestamp":"2021-09-28 16:48:31"}
+{"level":"error","message":"Error while getting changeset Details :: User details not found","service":"userActivityTracking","timestamp":"2021-09-28 16:48:31"}
+{"level":"info","message":"user details requested for ID 4","service":"userActivityTracking","timestamp":"2021-09-28 16:48:35"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:49:13"}
+{"level":"error","message":"Error while updating user details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 16:55:18"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:55:37"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:55:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:57:18"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:57:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:58:06"}
+{"level":"error","message":"Error while updating user details :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 16:58:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:58:25"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:58:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 16:59:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:01:02"}
+{"level":"info","message":"user details requested for ID 4","service":"userActivityTracking","timestamp":"2021-09-28 17:02:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:05:14"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:06:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:07:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:09:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:09:24"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:11:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:14:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:14:21"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:14:29"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:15:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:15:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:15:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:16:24"}
+{"level":"error","message":" Error occurred while checkin :: Pull request details not present.. Cannot proceed checkin","service":"userActivityTracking","timestamp":"2021-09-28 17:16:32"}
+{"level":"error","message":" Error occurred while checkin :: invalid input syntax for type uuid: \" 1\"","service":"userActivityTracking","timestamp":"2021-09-28 17:16:58"}
+{"level":"info","message":"File creation success for file165.js","service":"userActivityTracking","timestamp":"2021-09-28 17:17:19"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 1 from 1","service":"userActivityTracking","timestamp":"2021-09-28 17:17:19"}
+{"level":"error","message":" Error occurred while checkin :: Push failed due to time conflict. Please try after pull and update","service":"userActivityTracking","timestamp":"2021-09-28 17:17:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:17:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:18:01"}
+{"level":"error","message":" Error occurred while checkin :: WHERE parameter \"pull_token\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 17:18:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:19:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:19:52"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:19:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:22:23"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:22:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:32:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:32:34"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:33:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 17:34:51"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-28 17:34:55"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 17:34:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:07:21"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:20:31"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:21:21"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:23:40"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:25:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:26:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:26:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:26:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:27:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:27:55"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:28:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:29:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:29:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:29:29"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:29:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:30:09"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-28 18:30:12"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 18:30:12"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-28 18:30:17"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 18:30:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:30:28"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-28 18:30:36"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 18:30:36"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-28 18:30:43"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 18:30:43"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-28 18:30:46"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 18:30:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:31:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:33:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:33:47"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:34:51"}
+{"level":"error","message":"Error while getting list of branches :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 18:35:14"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:35:36"}
+{"level":"error","message":"Error while getting list of branches :: WHERE parameter \"id\" has invalid \"undefined\" value","service":"userActivityTracking","timestamp":"2021-09-28 18:35:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:36:25"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 1","service":"userActivityTracking","timestamp":"2021-09-28 18:37:59"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-28 18:37:59"}
+{"level":"error","message":"Error while getting changeset Details :: Changeset details not found","service":"userActivityTracking","timestamp":"2021-09-28 18:37:59"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:38:24"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:38:54"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:44:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:45:24"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:45:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:45:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:46:13"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:46:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:46:20"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:47:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:47:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:47:40"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-28 18:47:40"}
+{"level":"error","message":"Error while getting changeset Details :: changeset ID needed to query","service":"userActivityTracking","timestamp":"2021-09-28 18:47:40"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:48:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:48:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:48:39"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:48:43"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:49:45"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:49:46"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:50:06"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:50:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:50:15"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:50:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:50:38"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:50:40"}
+{"level":"info","message":"Error while user undefined requested to get changeset details with  [object Object]","service":"userActivityTracking","timestamp":"2021-09-28 18:50:40"}
+{"level":"error","message":"Error while getting changeset Details :: dataValues is not defined","service":"userActivityTracking","timestamp":"2021-09-28 18:50:40"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:50:48"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:50:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:51:00"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:51:01"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-28 18:52:25"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-28 18:52:27"}
