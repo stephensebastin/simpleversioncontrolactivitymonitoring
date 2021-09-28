@@ -7,7 +7,7 @@ client.on('connect', async function() {
     console.log('Redis Connected!');    
     await client.flushall('ASYNC', (value)=>{
         console.log("flush done");
-    }); // should not flush redis during restart - need to add job/other machnisms to do this
+    }); // should not flush redis during restart - need to add job/ fetch the changes from DB and update
   });
 
 client.on("error", function(error) {
