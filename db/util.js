@@ -2,7 +2,7 @@ const { sequelize, users, branches, pullrequests, changesets, changeset_details,
 const { logger } = require('../logger');
 const branch = require('../routes/branch');
 const redisUtil = require('../redisUtil');
-const { Op, col } = require("sequelize");
+const { Op } = require("sequelize");
 
 
 

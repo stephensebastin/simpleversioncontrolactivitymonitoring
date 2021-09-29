@@ -38,7 +38,6 @@ async function processPush(pushInfo) {
                 redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', true);
 
                 for (var i = 0; i < commitDetails.length; i++) {
-
                     var commitJSON = commitDetails[i];
                     var commit_message = commitJSON.commit_message;
                     const pushChanges = await changesets.create({ description: commit_message, user_id: pr_user_id, branchId: pr_branch_id }, { transaction: t });

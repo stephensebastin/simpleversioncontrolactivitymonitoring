@@ -333,7 +333,6 @@ module.exports = [{
                     responseJSON.message = "Branch details not updated";
                     return h.response(responseJSON);
                 }
-
             } catch (err) {
                 var statusCode = 500;
                 if (err.isJoi == true) {
