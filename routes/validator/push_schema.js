@@ -2,34 +2,34 @@ const Joi = require('joi');
 
 const schema_push_changes = Joi.object({
     userId: Joi.number().min(1).required(),
-    token :Joi.string().pattern(new RegExp('^[a-z0-9]+[-][0-9a-z]+[-][0-9a-z]+[-][0-9a-z]+[-][a-z0-9]+$')).required(),
+    token: Joi.string().pattern(new RegExp('^[a-z0-9]+[-][0-9a-z]+[-][0-9a-z]+[-][0-9a-z]+[-][a-z0-9]+$')).required(),
     //commitDetails:Joi.string()
-     commitDetails: Joi.array().items(
+    commitDetails: Joi.array().items(
         Joi.object({
-            commit_message:Joi.string().required(),
+            commit_message: Joi.string().required(),
             timestamp: Joi.date().timestamp().required(),
             changes: Joi.object({
-                add:Joi.array().items(
+                add: Joi.array().items(
                     Joi.object({
-                        filename:Joi.string().pattern(new RegExp('^[A-Za-z][A-Za-z0-9_-]{1,100}[A-Za-z0-9][.][a-zA-Z]+$')).required(),
-                        content:Joi.string()
+                        filename: Joi.string().pattern(new RegExp('^[A-Za-z][A-Za-z0-9_-]{1,100}[A-Za-z0-9][.][a-zA-Z]+$')).required(),
+                        content: Joi.string()
                     })
                 ),
                 update: Joi.array().items(
                     Joi.object({
-                        filename:Joi.string().pattern(new RegExp('^[A-Za-z][A-Za-z0-9_-]{1,100}[A-Za-z0-9][.][a-zA-Z]+$')).required(),
+                        filename: Joi.string().pattern(new RegExp('^[A-Za-z][A-Za-z0-9_-]{1,100}[A-Za-z0-9][.][a-zA-Z]+$')).required(),
                         lineChanges: Joi.array().items(
                             Joi.object({
-                                lineNo:Joi.number().min(1),
-                                insert:Joi.string(),
-                                update:Joi.string()
+                                lineNo: Joi.number().min(1),
+                                insert: Joi.string(),
+                                update: Joi.string()
                             })
                         )
                     })
                 )
             }),
         })
-    ) 
+    )
 });
 
 module.exports.schema_push_changes = schema_push_changes;
