@@ -2,6 +2,7 @@ var accesslogger = require('../logger/util');
 const db = require('../db/util');
 
 const validateUser = require('./validator/users_schema');
+const { logger } = require('../logger');
 
 module.exports = [{
         method: 'POST',
@@ -56,18 +57,17 @@ module.exports = [{
             try {
                 var params = request.payload;
                 var validatedParams = await validateUser.schema_user_delete.validateAsync(params);
+                accesslogger.logRequestDetails(request, 200, 'info');
+
                 var deleteCount = await db.deleteUser(validatedParams.userId);
+
                 if (deleteCount == 0) {
                     responseJSON.status = "fail";
                     responseJSON.message = "User details not found to delete";
-                    accesslogger.logRequestDetails(request, 200, 'info');
-
                     return h.response(responseJSON).code(200);
                 }
                 responseJSON.status = "success";
                 responseJSON.message = "User deleted Successfully";
-                accesslogger.logRequestDetails(request, 200, 'info');
-
                 return h.response(responseJSON);
 
             } catch (err) {
@@ -89,17 +89,15 @@ module.exports = [{
             try {
                 var params = request.query;
                 var validatedParams = await validateUser.schema_user_getInfo.validateAsync(params);
-
+                accesslogger.logRequestDetails(request, 200, 'info');
                 var branchInfo = await db.getUserInfo(validatedParams.userId);
                 if (branchInfo != null && branchInfo != undefined) {
                     responseJSON.status = "success";
                     responseJSON.data = branchInfo;
-                    accesslogger.logRequestDetails(request, 200, 'info');
                     return h.response(responseJSON);
                 } else {
                     responseJSON.status = "fail";
                     responseJSON.message = "User Details not found";
-                    accesslogger.logRequestDetails(request, 200, 'info');
                     return h.response(responseJSON);
                 }
 
@@ -132,7 +130,7 @@ module.exports = [{
                 } else {
                     responseJSON.status = "fail";
                     responseJSON.message = "User details not updated";
-                    accesslogger.logRequestDetails(request, 200, 'info');
+                    accesslogger.logRequestDetails(request, 500, 'info');
                     return h.response(responseJSON);
                 }
 

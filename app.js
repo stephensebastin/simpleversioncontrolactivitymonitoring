@@ -1,7 +1,6 @@
 const Hapi = require('hapi')
 var routes = require('./routes');
 var Qs = require('Qs');
-
 var accesslogger = require('./logger/util');
 const { logger } = require('./logger');
 const db = require('./db/util');
@@ -21,7 +20,8 @@ async function initServer() {
         logger.error(`Server start Failed ${err.message}`);
         process.exit(1);
     }
-    console.log(`Server started and running at ::, ${server.info.uri}`);
+
+    logger.info(`Server started and running at ::, ${server.info.uri}`);
 
 }
 
@@ -36,7 +36,6 @@ server.route({
     path: '/',
     handler: async(request, h) => {
         accesslogger.logRequestDetails(request, 500, 'info');
-
         return '<h3>Welcome to example user activity tracking on version control</h3>';
     }
 })

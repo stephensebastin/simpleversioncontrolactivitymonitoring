@@ -4,7 +4,7 @@ const redisUtil = require('../redisUtil');
 
 
 async function processPush(pushInfo) {
-    var userId = pushInfo.userId; //can use it for validation
+    var userId = pushInfo.userId;
     var token = pushInfo.token;
     var pr_branch_id;
     var commitDetails = pushInfo.commitDetails;
@@ -54,15 +54,13 @@ async function processPush(pushInfo) {
                             var updateInfoObj = updateInfo[j];
                             var fileName = updateInfoObj.filename;
                             var fileObj = await checkFileExist(fileName);
-
                             if (fileObj != null) {
                                 //var fileId = fileObj.id;
                                 const pushChanges = await changeset_details.create({ changes: updateInfoObj.lineChanges, changesetId: changeSetId, filename: fileName }, { transaction: t });
                                 if (pushChanges == null) {
-                                    throw new Error("Pushing failed for " + fileName);
+                                    throw new Error("Pushing failed for while adding changeset details" + fileName);
                                 }
                             } else {
-
                                 throw new Error(fileName + " not exists to update row ");
                             }
                         }
@@ -83,11 +81,11 @@ async function processPush(pushInfo) {
                                         throw new Error("Pushing failed for " + fileName);
                                     }
                                 }
-                                logger.info("File creation success for " + fileName);
+                                //logger.info("File creation success for " + fileName);
                             }
                         } catch (additionErr) {
                             if (additionErr.name == "SequelizeUniqueConstraintError") {
-                                logger.error("File name already exists in DB");
+                                //logger.error("File name already exists in DB");
                                 throw new Error("File name must be uniqe. Duplicate file name entered for new file addition");
                             } else {
                                 throw err;
@@ -97,37 +95,31 @@ async function processPush(pushInfo) {
                 }
                 return commitDetails.length;
             }).then((value) => {
-
-                logger.info(value + " commits successfully pushed to Branch ID :: " + pr_branch_id + " from " + userId); //todo remove
+                logger.info(value + " commits pushed to Branch ID :: " + pr_branch_id + " by " + userId);
                 return value;
             });
             var d = new Date();
             var timeNow = d.getTime();
-            redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
             redisUtil.setKeyToRedis(pr_branch_id + '_branch_last_push_time', timeNow);
-
             return result;
         } else {
             throw new Error("Commit details should not be emty")
         }
     } catch (err) {
-        redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
-        console.error(err.message);
-        logger.error(" Error occurred while checkin :: " + err.message);
+        logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
         throw err;
+    } finally {
+        redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
     }
 }
 module.exports.processPush = processPush;
 
 async function checkFileExist(fileName) { //check if file exists and returns fileid if exists else returns null
     try {
-
         const fileInfoObj = await fileinfo.findOne({ where: { filename: fileName } });
-
         return fileInfoObj;
-
     } catch (err) {
-        logger.error("Error while searching file:: " + err.message); //todo remove
+        logger.error("Error while searching file:: " + err.message);
         throw err;
     }
 }

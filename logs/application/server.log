@@ -60,3 +60,151 @@
 {"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:42:14"}
 {"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:42:16"}
 {"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:43:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:46:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:47:08"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:47:41"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 07:47:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:47:42"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 07:49:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:49:00"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 07:51:51"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:51:51"}
+{"level":"info","message":"Created new user  :: 20","service":"userActivityTracking","timestamp":"2021-09-29 07:52:13"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 07:54:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:54:56"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 07:56:56"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 07:56:56"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:00:03"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:00:03"}
+{"level":"info","message":"No record found to delete:: 10","service":"userActivityTracking","timestamp":"2021-09-29 08:00:16"}
+{"level":"info","message":"No record found to delete:: 9","service":"userActivityTracking","timestamp":"2021-09-29 08:00:20"}
+{"level":"info","message":"No record found to delete:: 8","service":"userActivityTracking","timestamp":"2021-09-29 08:00:22"}
+{"level":"info","message":"No record found to delete:: 7","service":"userActivityTracking","timestamp":"2021-09-29 08:00:25"}
+{"level":"info","message":"No record found to delete:: 6","service":"userActivityTracking","timestamp":"2021-09-29 08:00:26"}
+{"level":"info","message":"Record Deleted on class users extends Model {\n        /**\n         * Helper method for defining associations.\n         * This method is not a part of Sequelize lifecycle.\n         * The `models/index` file will call this method automatically.\n         */\n        static associate(models) {\n            // define association here\n        }\n        toJSON() {\n            return {...this.get(), updatedAt: undefined };\n        }\n    } column id value 5","service":"userActivityTracking","timestamp":"2021-09-29 08:00:28"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:01:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:01:22"}
+{"level":"info","message":"No record found to delete:: 5","service":"userActivityTracking","timestamp":"2021-09-29 08:01:26"}
+{"level":"info","message":"Created new user  :: 22","service":"userActivityTracking","timestamp":"2021-09-29 08:01:40"}
+{"level":"info","message":"Record Deleted on users column id value 22","service":"userActivityTracking","timestamp":"2021-09-29 08:01:48"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:02:39"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:02:39"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:03:13"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:03:13"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:03:45"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:03:45"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:06:33"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:06:33"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:06:36"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:06:36"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:07:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:07:09"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:07:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:07:50"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:08:00"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:08:00"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:08:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:08:38"}
+{"level":"info","message":"User details requested for ID 4","service":"userActivityTracking","timestamp":"2021-09-29 08:09:01"}
+{"level":"info","message":"User details requested for ID 8","service":"userActivityTracking","timestamp":"2021-09-29 08:09:07"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:17:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:17:22"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:20:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:20:19"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:20:24"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:20:24"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:21:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:21:09"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:22:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:22:15"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:22:36"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:22:36"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-29 08:23:06"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-29 08:23:06"}
+{"level":"info","message":"File creation success for file2ss0.js","service":"userActivityTracking","timestamp":"2021-09-29 08:23:12"}
+{"level":"info","message":"1 commits successfully pushed to Branch ID :: 1 from 1","service":"userActivityTracking","timestamp":"2021-09-29 08:23:12"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:25:17"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:25:17"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:25:20"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:25:20"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:29:05"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:29:05"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:30:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:30:06"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:30:28"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:30:28"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:31:02"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:31:02"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:31:22"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:31:22"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:32:49"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:32:49"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:34:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:34:06"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:35:07"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:35:07"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:36:16"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:36:16"}
+{"level":"info","message":"user undefined requested to get changeset details with ID 7","service":"userActivityTracking","timestamp":"2021-09-29 08:36:23"}
+{"level":"info","message":"User 1 requested to get all changeset list","service":"userActivityTracking","timestamp":"2021-09-29 08:36:44"}
+{"level":"info","message":"User 1 requested to get all changeset list","service":"userActivityTracking","timestamp":"2021-09-29 08:36:52"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:38:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:38:07"}
+{"level":"error","message":" Error occurred while checkin :: User ID :: 1 : ErrorFile name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-29 08:38:16"}
+{"level":"info","message":"1 commits pushed to Branch ID :: 1 by 1","service":"userActivityTracking","timestamp":"2021-09-29 08:38:21"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:39:32"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:39:32"}
+{"level":"info","message":"File  file2scs0.js  deleted  by user :: 1","service":"userActivityTracking","timestamp":"2021-09-29 08:39:57"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:41:04"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:41:04"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:41:12"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:41:12"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 08:42:06"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 08:42:06"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:12:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:12:09"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:15:15"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:15:15"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:16:38"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:16:38"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:16:53"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:16:53"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:20:11"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:20:11"}
+{"level":"info","message":"User 1 created branch TEST_BRANCH_21","service":"userActivityTracking","timestamp":"2021-09-29 09:20:40"}
+{"level":"info","message":"User 1 created branch TEST_BRANCH_2","service":"userActivityTracking","timestamp":"2021-09-29 09:20:42"}
+{"level":"error","message":"Error while 1 creating branch :: Error: Branch name already exists ::SequelizeUniqueConstraintError  :: INSERT INTO \"branches\" (\"id\",\"name\",\"description\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"name\",\"description\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-29 09:20:45"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:21:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:21:10"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:22:48"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:22:48"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:24:10"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:24:10"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:26:41"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:26:41"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:27:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:27:09"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:30:19"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:30:19"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:30:27"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:30:27"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:30:59"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:30:59"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:33:12"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:33:12"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:33:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:33:50"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:33:59"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:33:59"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:34:26"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:34:26"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:34:42"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:34:43"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:35:09"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:35:09"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:35:44"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:35:44"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:37:48"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:37:48"}
+{"level":"info","message":"Server started and running at ::, http://localhost:3000","service":"userActivityTracking","timestamp":"2021-09-29 09:38:50"}
+{"level":"info","message":"Database Connected","service":"userActivityTracking","timestamp":"2021-09-29 09:38:50"}

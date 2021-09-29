@@ -6,3 +6,7 @@
 {"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 20:21:53"}
 {"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-28 20:23:19"}
 {"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-28 20:23:19"}
+{"level":"error","message":"File name already exists in DB","service":"userActivityTracking","timestamp":"2021-09-29 08:23:06"}
+{"level":"error","message":" Error occurred while checkin :: File name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-29 08:23:06"}
+{"level":"error","message":" Error occurred while checkin :: User ID :: 1 : ErrorFile name must be uniqe. Duplicate file name entered for new file addition","service":"userActivityTracking","timestamp":"2021-09-29 08:38:16"}
+{"level":"error","message":"Error while 1 creating branch :: Error: Branch name already exists ::SequelizeUniqueConstraintError  :: INSERT INTO \"branches\" (\"id\",\"name\",\"description\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"name\",\"description\",\"createdAt\",\"updatedAt\";","service":"userActivityTracking","timestamp":"2021-09-29 09:20:45"}

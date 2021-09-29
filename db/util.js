@@ -2,7 +2,7 @@ const { sequelize, users, branches, pullrequests, changesets, changeset_details,
 const { logger } = require('../logger');
 const branch = require('../routes/branch');
 const redisUtil = require('../redisUtil');
-const { Op } = require("sequelize");
+const { Op, col } = require("sequelize");
 
 
 
@@ -29,7 +29,7 @@ function deleteUser(matchValue) {
 }
 async function deleteBranch(columnName, matchValue) {
     // return deleteRow(branches,columnName,matchValue);
-    //ask for method entry exit
+    //doubt:: ask for method entry exit
     try {
         const result = await sequelize.transaction(async(t) => {
 
@@ -46,18 +46,17 @@ async function deleteBranch(columnName, matchValue) {
 
         }).then((value) => {
             if (value > 0) {
-                logger.info("Record Deleted :: " + matchValue); //todo remove
+                logger.info("Branch deleted successfully :: " + columnName + ":" + matchValue);
             } else {
-                logger.info("No record found for :: " + matchValue); //todo remove   
+                logger.info("Branch details not found for :: " + columnName + ":" + matchValue);
             }
-
             return value;
         });
 
         return result;
 
     } catch (err) {
-        logger.error("Deletion error :: " + err.message); //todo remove
+        logger.error("Error while deleting branch:: " + err.message);
         throw err;
     }
 }
@@ -80,18 +79,17 @@ async function deleteRow(tableName, columnName, matchValue) {
 
         }).then((value) => {
             if (value > 0) {
-                logger.info("Record Deleted :: " + matchValue); //todo remove
+                logger.info(`Record Deleted on ${tableName.name} column ${columnName} value ${matchValue}`);
             } else {
-                logger.info("No record found for :: " + matchValue); //todo remove   
+                logger.info("No record found to delete :: " + columnName + ":" + matchValue);
             }
-
             return value;
         });
 
         return result;
 
     } catch (err) {
-        logger.error("Deletion error :: " + err.message); //todo remove
+        logger.error("Error while deleting record on  :: " + tableName.name + " :: " + err.message); //todo need to print/log stack trace
         throw err;
     }
 }
@@ -106,7 +104,7 @@ async function addUser(userInfo) {
             return user;
 
         }).then((value) => {
-            logger.info("new user added :: " + value.id); //todo remove
+            logger.info("Created new user  :: " + value.id);
             return value.id;
         });
 
@@ -115,7 +113,7 @@ async function addUser(userInfo) {
         if (err.name == 'SequelizeUniqueConstraintError') {
             throw new Error("Email id already exists");
         }
-        logger.error("Used creation error :: " + err.message); //todo remove
+        logger.error(`Used creation error for ${name}  ${team} :: Error ${err.message}`); //todo remove
         throw err;
     }
 }
@@ -139,8 +137,10 @@ async function createBranch(branchInfo) {
         return result;
     } catch (err) {
         if (err.name == "SequelizeUniqueConstraintError") {
-            logger.error("Branch creation error :: " + err.message + " ::" + err.name + "  :: " + err.sql); //todo remove
+            logger.error("Error while " + branchInfo.userId + " creating branch :: Error: Branch name already exists ::" + err.name + "  :: " + err.sql);
             throw new Error("Branch already exists. Create unique name. ");
+        } else {
+            logger.error("Error while " + branchInfo.userId + " creating branch :: " + err.message + " ::" + err.name + "  :: " + err.sql);
         }
         throw err;
     }
@@ -170,17 +170,13 @@ async function pullBranch(params) {
             const pullRequest = await pullrequests.create({ userId: user_id, branchId: branch_id }, { transaction: t });
             return pullRequest;
         }).then((value) => {
-            logger.info("new pull request created  :: " + value.pull_token); //todo remove
+            logger.info("new pull request created by user  :: " + userId + " For branch " + branchId);
             return value.pull_token;
         });
 
         return result;
     } catch (err) {
-        // console.log(err.name);
-        /* if(err.name =="SequelizeUniqueConstraintError") {
-             logger.error ("Pull creation error :: " +err.message + " ::" + err.name+"  :: " +err.sql) ; //todo remove
-             throw new Error(" ");
-         }*/
+        logger.info("Error while making pullrequest for branch " + branchId + " by User " + userId + " :: Error:" + err.message);
         throw err;
     }
 }
@@ -193,7 +189,6 @@ async function getBranchDetails(reqInfo) {
         if (reqInfo.branchId != undefined && reqInfo.branchId != null) {
             logger.info(`user ${reqInfo.userid} requested to get branch details with ID ${reqInfo.branchId}`);
             var branch = await branches.findOne({ where: { id: reqInfo.branchId } });
-
             return branch;
 
         } else if (reqInfo.branchName != undefined && reqInfo.branchName != null) {
@@ -205,8 +200,7 @@ async function getBranchDetails(reqInfo) {
         }
 
     } catch (err) {
-        logger.info(`Error while user ${reqInfo.userid} requested to get branch details with  ${reqInfo}`);
-        logger.error("Error while getting branch Details :: " + err.message); //todo remove
+        logger.info(`Error while user ${reqInfo.userid} requested to get all branch details with  ${reqInfo}, Error : ${err.message}`);
         throw err;
     }
 }
@@ -214,9 +208,11 @@ module.exports.getBranchDetails = getBranchDetails;
 
 async function getAllBranchDetails() {
     try {
-        var branchList = await branches.findAll({ order: [
+        var branchList = await branches.findAll({
+            order: [
                 ['createdAt', 'DESC']
-            ] });
+            ]
+        });
 
         if (branchList.length > 0) {
             var branchListArr = [];
@@ -280,7 +276,7 @@ async function createFile(reqInfo) {
             }
             return fileObj;
         }).then((value) => {
-            logger.info("new file created :: " + value.filename); //todo remove
+            logger.info("New file " + value.filename + " added to the branch : " + branchId + " by User: " + userId); //all log convert into json with action
             return value.filename;
         });
 
@@ -289,10 +285,11 @@ async function createFile(reqInfo) {
         redisUtil.setKeyToRedis(branchId + '_branch_last_push_time', timeNow);
         return result;
     } catch (err) {
-        console.log(err.name);
         if (err.name == "SequelizeUniqueConstraintError") {
-            logger.error("File creation error :: " + err.message + " ::" + err.name + "  :: " + err.sql); //todo remove
+            logger.error("Error while creating a file by user : " + userId + " on branch :" + branchId + ":: Error: File already exists ::" + err.name + "  :: " + err.sql);
             throw new Error("File already exists. Create unique name. ");
+        } else {
+            logger.error("Error while creating a file by user : " + userId + " on branch :" + branchId + ":: Error: " + err.message + " ::" + err.name + "  :: " + err.sql);
         }
         throw err;
     } finally {
@@ -319,7 +316,7 @@ async function removeFile(reqInfo) {
                 throw new Error("Branch doesn't exist. Create branch and add file");
             }
             var valueFromRedis = await redisUtil.getValueFromRedis(branchId + '_branch_lock_push');
-            console.log("valueFromRedis " + valueFromRedis);
+
             if (valueFromRedis != null && (valueFromRedis == true || valueFromRedis == 'true')) {
                 throw new Error("File deletion failed. Change in progress");
             }
@@ -330,7 +327,6 @@ async function removeFile(reqInfo) {
                 throw new Error("Changeset creation error");
             }
             var changeSetId = pushChanges.id;
-            console.log(changeSetId);
 
             const fileObj = await fileinfo.destroy({ where: { filename: fileName, branchId: branchId } }, { transaction: t });
             if (fileObj == null) {
@@ -340,18 +336,18 @@ async function removeFile(reqInfo) {
             } else {
 
                 var deletionInfoObj = fileName;
-                const pushChanges = await changeset_details.create({ deletion: fileName, changesetId: changeSetId, filename: fileName }, { transaction: t });
+                const pushChanges = await changeset_details.create({ deletion: deletionInfoObj, changesetId: changeSetId, filename: fileName }, { transaction: t });
                 if (pushChanges == null) {
                     throw new Error("Delete failed for " + fileName);
                 }
+
             }
             return fileObj;
         }).then((value) => {
             if (value > 0) {
-                logger.info("File  " + fileName + "  deleted  by user :: " + userId); //todo remove
+                logger.info("File  " + fileName + "  deleted  by user :: " + userId + " on branch :" + branchId);
             } else {
-                logger.info("File  " + fileName + " not deleted by user :: " + userId); //todo remove
-
+                logger.info("File  " + fileName + " not deleted by user :: " + userId + " on branch :" + branchId);
             }
 
             return value.filename;
@@ -363,11 +359,7 @@ async function removeFile(reqInfo) {
         redisUtil.setKeyToRedis(branchId + '_branch_last_push_time', timeNow);
         return result;
     } catch (err) {
-        console.log(err.name);
-        if (err.name == "SequelizeUniqueConstraintError") {
-            logger.error("File creation error :: " + err.message + " ::" + err.name + "  :: " + err.sql); //todo remove
-            throw new Error("File already exists. Create unique name. ");
-        }
+        logger.error("Error while removing a file on branch : " + branchId + " by user : " + userId + ":: Error: " + err.message + " ::" + err.name + "  :: " + err.sql);
         throw err;
     } finally {
         redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
@@ -379,22 +371,25 @@ module.exports.removeFile = removeFile;
 async function getChangestInfo(reqInfo) {
     try {
 
-        logger.info(`user ${reqInfo.userid} requested to get changeset details with ID ${reqInfo.changesetId}`);
         var changeset = await changesets.findOne({ where: { id: reqInfo.changesetId } });
-        if (changeset == null) {
-            throw new Error("Changeset details not found");
-        }
+        /*   if (changeset == null) {
+              throw new Error("Changeset details not found");
+          } */
         var chansetInfo = {};
         chansetInfo = changeset.dataValues;
         delete chansetInfo["updatedAt"];
-        var changesetDetailsObj = await changeset_details.findAll({ where: { changesetId: changeset.id }, order: [
+        var changesetDetailsObj = await changeset_details.findAll({
+            where: { changesetId: changeset.id },
+            order: [
                 ['createdAt', 'DESC']
-            ] });
+            ]
+        });
         if (changesetDetailsObj == null) {
             throw new Error("Error while fetching changeset details");
         }
         chansetInfo["changesetDetails"] = changesetDetailsObj;
 
+        logger.info(`user ${reqInfo.userid} requested to get changeset details with ID ${reqInfo.changesetId}`);
         return chansetInfo;
 
     } catch (err) {
@@ -417,9 +412,12 @@ async function getAllChangesetsByUser(params) {
             throw new Error("Branch doesn't exist.");
         }
 
-        var changesetList = await changesets.findAll({ where: { user_id: userId, branchId: branchId }, order: [
+        var changesetList = await changesets.findAll({
+            where: { user_id: userId, branchId: branchId },
+            order: [
                 ['createdAt', 'DESC']
-            ] });
+            ]
+        });
 
         /*  if(changesetList.length > 0) {
               var branchListArr = [];
@@ -431,9 +429,10 @@ async function getAllChangesetsByUser(params) {
               return branchListArr;
           }
         */
+        logger.info(`User ${userId} requested to get all changeset list`);
         return changesetList;
     } catch (err) {
-        logger.error("Error while getting list of branches :: " + err.message); //todo remove
+        logger.error("Error while getting changeset list of user: " + userId + " :branch: " + branchId + " :Error:" + err.message);
         throw err;
     }
 }
@@ -443,24 +442,24 @@ module.exports.getAllChangesetsByUser = getAllChangesetsByUser;
 async function getFileInfo(reqInfo) {
     try {
 
-        if (reqInfo.fileName != undefined && reqInfo.fileName != null) {
-            if (reqInfo.userId == null || reqInfo.userId == undefined) {
-                throw new Error("User ID needed to query");
-            }
-            if (reqInfo.branchId == null || reqInfo.branchId == undefined) {
-                throw new Error("Branch ID needed to query");
-            }
-            logger.info(`user ${reqInfo.userid} requested to get details about the files with name ${reqInfo.fileName}`);
-            var fileInfo = await fileinfo.findOne({ where: { filename: reqInfo.fileName, branchId: reqInfo.branchId } });
+        //if (reqInfo.fileName != undefined && reqInfo.fileName != null) {
+        /* if (reqInfo.userId == null || reqInfo.userId == undefined) {
+             throw new Error("User ID needed to query");
+         }
+         if (reqInfo.branchId == null || reqInfo.branchId == undefined) {
+             throw new Error("Branch ID needed to query");
+         }*/ // handled with JOI
+        logger.info(`user ${reqInfo.userid} requested to get details about the files with name ${reqInfo.fileName}`);
+        var fileInfo = await fileinfo.findOne({ where: { filename: reqInfo.fileName, branchId: reqInfo.branchId } });
 
-            if (fileInfo == null) {
-                throw new Error("FileInfo details not found");
-            }
-            return fileInfo;
-
-        } else {
-            throw new Error("fileInfo need name to query");
+        if (fileInfo == null) {
+            throw new Error("FileInfo details not found");
         }
+        return fileInfo;
+
+        /*} else {
+            throw new Error("fileInfo need name to query");
+        }*/
 
     } catch (err) {
         logger.error(`Error while user ${reqInfo.userid} requested to get changeset details with  ${reqInfo}`);
@@ -479,17 +478,12 @@ async function getUserInfo(userId) {
             throw new Error("User ID needed to query");
         }
 
-        logger.info(`user details requested for ID ${userId}`);
+        logger.info(`User details requested for ID ${userId}`);
         var fileInfo = await users.findOne({ where: { id: userId } });
-
-        if (fileInfo == null) {
-            throw new Error("User details not found");
-        }
         return fileInfo;
 
     } catch (err) {
-        logger.info(`Error while getting user ${userId} details}`);
-        logger.error("Error while getting changeset Details :: " + err.message); //todo remove
+        logger.info(`Error while getting user ${userId} details} :: error :${err.message}`);
         throw err;
     }
 }
@@ -499,9 +493,12 @@ module.exports.getUserInfo = getUserInfo;
 
 async function getPullRequestsByUser(reqInfo) {
     try {
-        var pullList = await pullrequests.findAll({ where: { userId: reqInfo.userId }, order: [
+        var pullList = await pullrequests.findAll({
+            where: { userId: reqInfo.userId },
+            order: [
                 ['createdAt', 'DESC']
-            ] });
+            ]
+        });
 
         if (pullList.length > 0) {
             var branchListArr = [];
@@ -526,7 +523,6 @@ module.exports.getPullRequestsByUser = getPullRequestsByUser;
 
 async function updateUserInfo(reqInfo) {
     try {
-
         var updateValues = {};
         for (var key in reqInfo) {
             if (key == "userId" || key == "updatedAt") {
@@ -538,21 +534,24 @@ async function updateUserInfo(reqInfo) {
                 updateValues[key] = val;
             }
         }
-        console.log(updateValues);
         if (Object.keys(updateValues).length == 0) {
             throw new Error("Update value must be mentioned");
         }
         const result = await sequelize.transaction(async(t) => {
-            //            var  updateVal = await users.update(updateValues,{where:{id: {[Op.gte]  : reqInfo.id}}});
+            //   var  updateVal = await users.update(updateValues,{where:{id: {[Op.gte]  : reqInfo.id}}});
             var updateVal = await users.update(updateValues, { where: { id: reqInfo.userId } });
             return updateVal;
         }).then((value) => {
+            if (value[0] > 0) {
+                logger.info(`User details updated for ${reqInfo.userId}`);
+            } else {
+                logger.info(`User details not updated for ${reqInfo.userId}`);
+            }
             return value[0];
         });
-
         return result;
     } catch (err) {
-        logger.error("Error while updating user details :: " + err.message); //todo remove
+        logger.error("Error while updating user details for User ID " + reqInfo.userId + " Error:: " + err.message);
         throw err;
     }
 }
@@ -577,15 +576,19 @@ async function updateBranchInfo(reqInfo) {
         }
         const result = await sequelize.transaction(async(t) => {
             var updateVal = await branches.update(updateValues, { where: { id: reqInfo.branchId } });
-            console.log(updateVal);
             return updateVal;
         }).then((value) => {
+            if (value[0] > 0) {
+                logger.info(`Branch ${branchId} details updated by ${reqInfo.userId}`);
+            } else {
+                logger.info(`Branch ${branchId} details not updated. Update request by ${reqInfo.userId}`);
+            }
             return value[0];
         });
 
         return result;
     } catch (err) {
-        logger.error("Error while updating branch details :: " + err.message); //todo remove
+        logger.error("Error while updating branch " + branchId + " details by " + userId + " :Error :: " + err.message);
         throw err;
     }
 }
