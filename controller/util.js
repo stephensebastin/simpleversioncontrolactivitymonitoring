@@ -62,9 +62,6 @@ async function processPush(pushInfo) {
                             }
                         }
                     }
-                    for (var i = 0; i < 1000000000; i++) {
-
-                    }
                     var additionInfo = changesJson.add;
                     if (additionInfo != undefined && additionInfo != null && additionInfo.length > 0) {
                         try {
@@ -119,10 +116,6 @@ async function processPush(pushInfo) {
             redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
             throw err;
         }
-        /*         if (err.code == 'ECONNREFUSED') {
-                    console.log("redis error ...");
-                }
-         */
     }
 }
 module.exports.processPush = processPush;

@@ -33,7 +33,7 @@ client.on('connect', async function() {
 });
 
 client.on("error", function(error) {
-    console.error("sipalying redis  error");
+    console.error("redis error");
     console.error(error);
 });
 
