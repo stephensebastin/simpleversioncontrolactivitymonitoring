@@ -25,8 +25,7 @@ async function processPush(pushInfo) {
 
                 var valueFromRedis = await redisUtil.getValueFromRedis(pr_branch_id + '_branch_lock_push');
                 if (valueFromRedis != null && (valueFromRedis == true || valueFromRedis == 'true')) {
-                    console.log("push not allowed");
-                    throw new Error("Push failed. Already one push in progress");
+                    throw new Error("Push to branch is locked");
                 }
 
                 var lastestCommitTimestamp = getLastCommitTime(commitDetails);
@@ -36,7 +35,6 @@ async function processPush(pushInfo) {
                     throw new Error("Push failed due to time conflict. Please try after pull and update"); //indeirectly commit time must be greater
                 }
                 redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', true);
-
                 for (var i = 0; i < commitDetails.length; i++) {
                     var commitJSON = commitDetails[i];
                     var commit_message = commitJSON.commit_message;
@@ -64,6 +62,9 @@ async function processPush(pushInfo) {
                             }
                         }
                     }
+                    for (var i = 0; i < 1000000000; i++) {
+
+                    }
                     var additionInfo = changesJson.add;
                     if (additionInfo != undefined && additionInfo != null && additionInfo.length > 0) {
                         try {
@@ -80,11 +81,11 @@ async function processPush(pushInfo) {
                                         throw new Error("Pushing failed for " + fileName);
                                     }
                                 }
-                                //logger.info("File creation success for " + fileName);
+
                             }
                         } catch (additionErr) {
                             if (additionErr.name == "SequelizeUniqueConstraintError") {
-                                //logger.error("File name already exists in DB");
+
                                 throw new Error("File name must be uniqe. Duplicate file name entered for new file addition");
                             } else {
                                 throw err;
@@ -97,18 +98,31 @@ async function processPush(pushInfo) {
                 logger.info(value + " commits pushed to Branch ID :: " + pr_branch_id + " by " + userId);
                 return value;
             });
-            var d = new Date();
-            var timeNow = d.getTime();
-            redisUtil.setKeyToRedis(pr_branch_id + '_branch_last_push_time', timeNow);
+            try {
+                var d = new Date();
+                var timeNow = d.getTime();
+                redisUtil.setKeyToRedis(pr_branch_id + '_branch_last_push_time', timeNow);
+                redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
+            } catch (redisError) {
+                console.log("redis error");
+            }
             return result;
         } else {
             throw new Error("Commit details should not be emty")
         }
     } catch (err) {
-        logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
-        throw err;
-    } finally {
-        redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
+        if (err.message == 'Push to branch is locked') {
+            logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
+            throw new Error("Push not allowed. Already a push in progress");
+        } else {
+            logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
+            redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
+            throw err;
+        }
+        /*         if (err.code == 'ECONNREFUSED') {
+                    console.log("redis error ...");
+                }
+         */
     }
 }
 module.exports.processPush = processPush;

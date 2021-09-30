@@ -252,9 +252,9 @@ async function createFile(reqInfo) {
                 throw new Error("Branch doesn't exist. Create branch and add file");
             }
             var valueFromRedis = await redisUtil.getValueFromRedis(branchId + '_branch_lock_push');
-            console.log("valueFromRedis " + valueFromRedis);
+
             if (valueFromRedis != null && (valueFromRedis == true || valueFromRedis == 'true')) {
-                throw new Error("File Creation failed. Already one push in progress");
+                throw new Error("Push to branch is locked");
             }
 
             redisUtil.setKeyToRedis(branchId + '_branch_lock_push', true);
@@ -283,17 +283,23 @@ async function createFile(reqInfo) {
         var d = new Date();
         var timeNow = d.getTime();
         redisUtil.setKeyToRedis(branchId + '_branch_last_push_time', timeNow);
+        redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
+
         return result;
     } catch (err) {
-        if (err.name == "SequelizeUniqueConstraintError") {
+        if (err.message == 'Push to branch is locked') {
+            logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
+            throw new Error("File Creation failed. Already one push in progress");
+        } else if (err.name == "SequelizeUniqueConstraintError") {
             logger.error("Error while creating a file by user : " + userId + " on branch :" + branchId + ":: Error: File already exists ::" + err.name + "  :: " + err.sql);
+            redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
             throw new Error("File already exists. Create unique name. ");
         } else {
             logger.error("Error while creating a file by user : " + userId + " on branch :" + branchId + ":: Error: " + err.message + " ::" + err.name + "  :: " + err.sql);
+            redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
+            throw err;
         }
-        throw err;
-    } finally {
-        redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
+
     }
 }
 module.exports.createFile = createFile;
@@ -318,7 +324,7 @@ async function removeFile(reqInfo) {
             var valueFromRedis = await redisUtil.getValueFromRedis(branchId + '_branch_lock_push');
 
             if (valueFromRedis != null && (valueFromRedis == true || valueFromRedis == 'true')) {
-                throw new Error("File deletion failed. Change in progress");
+                throw new Error("Push to branch is locked");
             }
             redisUtil.setKeyToRedis(branchId + '_branch_lock_push', true);
             var commit_message = `Deleting ${fileName} to the branch`;
@@ -357,12 +363,16 @@ async function removeFile(reqInfo) {
         var d = new Date();
         var timeNow = d.getTime();
         redisUtil.setKeyToRedis(branchId + '_branch_last_push_time', timeNow);
+        redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
+
         return result;
     } catch (err) {
+        if (err.message == 'Push to branch is locked') {
+            logger.error(" Error occurred while removing a file :: User ID :: " + userId + " : Error" + err.message);
+            throw new Error("File remove is failed. One push in progress");
+        }
         logger.error("Error while removing a file on branch : " + branchId + " by user : " + userId + ":: Error: " + err.message + " ::" + err.name + "  :: " + err.sql);
         throw err;
-    } finally {
-        redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
     }
 }
 module.exports.removeFile = removeFile;

@@ -3,18 +3,25 @@ const bluebird = require("bluebird");
 const { logger } = require("../logger");
 bluebird.promisifyAll(redis)
 const client = redis.createClient()
+var redisDown = true;
 
 client.on('connect', async function() {
     logger.info('Redis Connected!');
+    redisDown = false;
 
     client.keys('*_branch_lock_push', async function(err, keys) {
         if (err) return console.log(err);
 
+        //ideally should not happen
         for (var i = 0, len = keys.length; i < len; i++) {
             var keyToSearch = keys[i];
             var branchLockVal = await getValueFromRedis(keyToSearch);
             if (branchLockVal == true || branchLockVal == 'true') {
                 setTimeout(setValueFalseForKey.bind(null, keyToSearch), 3000); //if redis restarted - checking whether any transaction exists - assuming transaction timeout 3 seconds
+                // in memory we can keep one variable incase redis fails and accessing redis that time
+                //exception may thrown
+                //checking in memory variable also
+                //while redis restarts check this var and update value
             }
 
         }
@@ -26,6 +33,7 @@ client.on('connect', async function() {
 });
 
 client.on("error", function(error) {
+    console.error("sipalying redis  error");
     console.error(error);
 });
 
