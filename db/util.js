@@ -9,7 +9,8 @@ const { Op } = require("sequelize");
 async function initDB(operation) {
     try {
         if (operation == 'sync') {
-            await sequelize.sync({ force: true });
+            // await sequelize.sync({ force: true });
+            await sequelize.sync({ alter: true });
             logger.info("Database sync success");
         } else {
             await sequelize.authenticate();
@@ -111,10 +112,12 @@ async function addUser(userInfo) {
         return result;
     } catch (err) {
         if (err.name == 'SequelizeUniqueConstraintError') {
+            logger.info(`Used creation error for ${name}  ${team} :: Error : Email id already exists`);
             throw new Error("Email id already exists");
+        } else {
+            logger.error(`Used creation error for ${name}  ${team} :: Error ${err.message}`);
+            throw err;
         }
-        logger.error(`Used creation error for ${name}  ${team} :: Error ${err.message}`); //todo remove
-        throw err;
     }
 }
 
@@ -288,10 +291,10 @@ async function createFile(reqInfo) {
         return result;
     } catch (err) {
         if (err.message == 'Push to branch is locked') {
-            logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
+            logger.info(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
             throw new Error("File Creation failed. Already one push in progress");
         } else if (err.name == "SequelizeUniqueConstraintError") {
-            logger.error("Error while creating a file by user : " + userId + " on branch :" + branchId + ":: Error: File already exists ::" + err.name + "  :: " + err.sql);
+            logger.info("Error while creating a file by user : " + userId + " on branch :" + branchId + ":: Error: File already exists ::" + err.name + "  :: " + err.sql);
             redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
             throw new Error("File already exists. Create unique name. ");
         } else {
@@ -368,7 +371,7 @@ async function removeFile(reqInfo) {
         return result;
     } catch (err) {
         if (err.message == 'Push to branch is locked') {
-            logger.error(" Error occurred while removing a file :: User ID :: " + userId + " : Error" + err.message);
+            logger.info(" Error occurred while removing a file :: User ID :: " + userId + " : Error" + err.message);
             throw new Error("File remove is failed. One push in progress");
         }
         logger.error("Error while removing a file on branch : " + branchId + " by user : " + userId + ":: Error: " + err.message + " ::" + err.name + "  :: " + err.sql);

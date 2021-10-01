@@ -33,7 +33,9 @@ client.on('connect', async function() {
 });
 
 client.on("error", function(error) {
-    console.error("redis error");
+    if (error.errno == 'ECONNREFUSED') {
+        logger.error("Redis is not connected..." + error);
+    }
     console.error(error);
 });
 

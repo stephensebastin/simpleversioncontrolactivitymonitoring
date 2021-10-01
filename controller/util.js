@@ -109,7 +109,7 @@ async function processPush(pushInfo) {
         }
     } catch (err) {
         if (err.message == 'Push to branch is locked') {
-            logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
+            logger.info(" Error occurred while checkin :: User ID :: " + userId + " : Error" + "Push not allowed. Already a push in progress");
             throw new Error("Push not allowed. Already a push in progress");
         } else {
             logger.error(" Error occurred while checkin :: User ID :: " + userId + " : Error" + err.message);
