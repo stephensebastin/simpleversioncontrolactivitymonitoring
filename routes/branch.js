@@ -3,7 +3,8 @@ const db = require('../db/util');
 const { logger } = require('../logger');
 const validateBranch = require('./validator/branch_schema');
 //common validation //with loading scripts/json file 
-module.exports = [{
+module.exports = [
+    {
         method: 'GET',
         path: '/api/branch/getBranchInfo',
         handler: async function(request, h) {
@@ -40,7 +41,7 @@ module.exports = [{
         method: 'GET',
         path: '/api/branch/getbrancheslist',
         handler: async function(request, h) {
-            var responseJSON = null;
+            var responseJSON={};
             try {
                 var params = request.query;
                 var validatedParams = await validateBranch.schema_getBranchesList.validateAsync(params);
@@ -341,6 +342,72 @@ module.exports = [{
                 responseJSON.status = "error";
                 responseJSON.message = err.message;
                 accesslogger.logRequestDetails(request, statusCode, 'error');
+                return h.response(responseJSON).code(statusCode);
+            }
+        }
+    },
+    {
+        method: 'GET',
+        path: '/api/branch/getallchangesets',
+        handler: async function(request, h) {
+            var responseJSON = {};
+            try {
+                var params = request.query;
+                var validatedParam = await validateBranch.schema_getAllChangeSets.validateAsync(params);
+                var changeSetInfo = await db.getAllChangeSetsByBranch(validatedParam);
+                accesslogger.logRequestDetails(request, 200, 'info');
+                if (changeSetInfo != null && changeSetInfo != undefined) {
+                    responseJSON.status = "success";
+                    responseJSON.data = changeSetInfo;
+                    return h.response(responseJSON);
+                } else {
+                    responseJSON.status = "fail";
+                    responseJSON.message = "File details  not found";
+                    return h.response(responseJSON);
+                }
+
+            } catch (err) {
+                var statusCode = 500;
+                if (err.isJoi == true) {
+                    statusCode = 400;
+                }
+                responseJSON.status = "error";
+                responseJSON.message = err.message;
+                accesslogger.logRequestDetails(request, statusCode, 'error');
+                console.log(err)
+                return h.response(responseJSON).code(statusCode);
+            }
+        }
+    },
+    {
+        method: 'GET',
+        path: '/api/branch/getallfiles',
+        handler: async function(request, h) {
+            var responseJSON = {};
+            try {
+                var params = request.query;
+                var validatedParam = await validateBranch.schema_getAllfiles.validateAsync(params);
+                var changeSetInfo = await db.getAllFilesByBranch(validatedParam);
+                accesslogger.logRequestDetails(request, 200, 'info');
+                if (changeSetInfo != null && changeSetInfo != undefined) {
+                    responseJSON.status = "success";
+                    responseJSON.data = changeSetInfo;
+                    return h.response(responseJSON);
+                } else {
+                    responseJSON.status = "fail";
+                    responseJSON.message = "No files found";
+                    return h.response(responseJSON);
+                }
+
+            } catch (err) {
+                var statusCode = 500;
+                if (err.isJoi == true) {
+                    statusCode = 400;
+                }
+                responseJSON.status = "error";
+                responseJSON.message = err.message;
+                accesslogger.logRequestDetails(request, statusCode, 'error');
+                console.log(err)
                 return h.response(responseJSON).code(statusCode);
             }
         }

@@ -9,7 +9,7 @@ const Path = require('path');
 
 const server = Hapi.server({
     host: 'localhost',
-    port: 3000,
+    port: 8000,
     query: {
         parser: (query) => Qs.parse(query)
     },

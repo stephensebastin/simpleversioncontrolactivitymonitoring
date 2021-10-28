@@ -1,0 +1,152 @@
+.commit-create-div{
+  
+    position: fixed;
+  bottom: 10%;
+  right: 5%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.create-commit{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+
+.create-commit:hover {
+    background-color: white;
+    border-bottom: 2px solid #0d6efd;
+}
+.create-commit:focus {
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border: 2px solid #0d6efd;   
+}
+.model-title-p{
+    padding: 0;
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 22px;
+}
+.addFileDiv{
+    padding: 20px;
+    text-align: center;
+/*     border: 1px solid whitesmoke; */
+}
+.add-files-button-div{
+    text-align: right;
+}
+.add-to-changes-button{
+    margin-left: 10px;
+}
+
+/* input[type="button"]:hover {
+    background-color: white;
+    border-bottom: 2px solid #0d6efd;
+} */
+
+input[type="number"] {
+    padding: 5px;
+}
+
+input[type="button"] {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+.addFileChangesDiv > p, .updateFileChangesDiv> p{
+    font-weight:bold;
+}
+
+.addFileChangesDiv, .updateFileChangesDiv{
+    padding-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.modify-files-button-div, .add-files-button-div,.delete-files-button-div {
+    display: inline-block;
+    margin-right: 10px;
+}
+.button-container{
+    text-align: right;
+    padding: 5px
+}
+.update-new-file{
+    margin:10px;
+    margin-top:10px;
+}
+.add-new-file{
+    margin:5px;
+    margin-bottom: 10px;
+}
+
+
+.valueTitle{
+    display:inline-block;
+    color:rgb(97, 96, 96);
+    padding-left: 10px;
+    font-weight:400;
+}
+.modify-files-button:hover, .add-files-button:hover,.delete-files-button:hover,.add-to-changes-button:hover,.update-to-changes-button:hover {
+    background-color: white;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.delete-files-button:hover{
+    background-color: white;
+    border-bottom: 2px solid #F13535;
+}
+.delete-file-button:hover{
+    background-color: white;
+    border: 2px solid #F13535;
+}
+.updateOption {
+    padding: 5px;
+}
+.commitMessage, .commitLabel, .commitPushButtonDiv{
+    display:inline-block;
+    padding-right: 10px;
+}
+
+
+.commitPushButton{
+padding: 5px;
+padding-left: 10px;
+padding-right: 10px;
+border: 1px solid grey;
+border-radius: 3px;
+background-color: whitesmoke;
+}
+.commitPushButton:hover{
+    background-color: white;
+    border-bottom: 2px solid #0d6efd;
+}
+.commitPushButton:focus{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.updateFileChangesDetailsDiv, .addFileChangesDetail{
+ display:inline-block;
+ margin: 10px;
+ padding: 5px;
+ border: 1px solid rgb(212, 212, 212);
+}
+
+.updateFileChangesDetails{
+    
+    padding: 5px;
+    margin:5px;
+    border: 1px solid whitesmoke;
+
+}

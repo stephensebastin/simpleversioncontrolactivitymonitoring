@@ -20,18 +20,20 @@ const schema_user_create = Joi.object({
 module.exports.schema_user_create = schema_user_create;
 
 const schema_user_delete = Joi.object({
-    userId: Joi.number().min(1).required(),
+    userId: Joi.number().min(1),
+    email: Joi.string().lowercase().email()
     // name : Joi.string().pattern(new RegExp('^[A-Z][A-Za-z0-9_]{1,50}[A-Z0-9]$')).required(),
     // description: Joi.string(),
-});
+}).or('userId', 'email');
 module.exports.schema_user_delete = schema_user_delete;
 
 
 const schema_user_getInfo = Joi.object({
-    userId: Joi.number().min(1).required(),
-    //name : Joi.string().pattern(new RegExp('^[A-Z][A-Za-z0-9_]{1,50}[A-Z0-9]$')).required(),
+    userId: Joi.number().min(1),
+    email: Joi.string().lowercase().email()
+    // name : Joi.string().pattern(new RegExp('^[A-Z][A-Za-z0-9_]{1,50}[A-Z0-9]$')).required(),
     // description: Joi.string(),
-});
+}).or('userId', 'email');
 
 module.exports.schema_user_getInfo = schema_user_getInfo;
 

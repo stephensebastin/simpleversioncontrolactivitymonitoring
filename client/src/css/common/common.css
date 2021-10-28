@@ -1,0 +1,17 @@
+.title-content{
+    font-size: 20px;
+}
+
+.navbar-div{
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+    height: 60px;
+}
+
+/* .dashboard{
+    padding-top:  10px;
+    background-color:white
+} */   

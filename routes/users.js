@@ -90,7 +90,7 @@ module.exports = [{
                 var params = request.query;
                 var validatedParams = await validateUser.schema_user_getInfo.validateAsync(params);
                 accesslogger.logRequestDetails(request, 200, 'info');
-                var branchInfo = await db.getUserInfo(validatedParams.userId);
+                var branchInfo = await db.getUserInfo(validatedParams);
                 if (branchInfo != null && branchInfo != undefined) {
                     responseJSON.status = "success";
                     responseJSON.data = branchInfo;

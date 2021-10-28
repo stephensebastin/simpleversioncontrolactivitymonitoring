@@ -286,7 +286,7 @@ async function createFile(reqInfo) {
         var d = new Date();
         var timeNow = d.getTime();
         redisUtil.setKeyToRedis(branchId + '_branch_last_push_time', timeNow);
-        redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
+        redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
 
         return result;
     } catch (err) {
@@ -343,7 +343,6 @@ async function removeFile(reqInfo) {
             } else if (fileObj == 0) {
                 throw new Error("File " + fileName + " not present to delete");
             } else {
-
                 var deletionInfoObj = fileName;
                 const pushChanges = await changeset_details.create({ deletion: deletionInfoObj, changesetId: changeSetId, filename: fileName }, { transaction: t });
                 if (pushChanges == null) {
@@ -366,7 +365,7 @@ async function removeFile(reqInfo) {
         var d = new Date();
         var timeNow = d.getTime();
         redisUtil.setKeyToRedis(branchId + '_branch_last_push_time', timeNow);
-        redisUtil.setKeyToRedis(pr_branch_id + '_branch_lock_push', false);
+        redisUtil.setKeyToRedis(branchId + '_branch_lock_push', false);
 
         return result;
     } catch (err) {
@@ -402,11 +401,11 @@ async function getChangestInfo(reqInfo) {
         }
         chansetInfo["changesetDetails"] = changesetDetailsObj;
 
-        logger.info(`user ${reqInfo.userid} requested to get changeset details with ID ${reqInfo.changesetId}`);
+        logger.info(`user ${reqInfo.userId} requested to get changeset details with ID ${reqInfo.changesetId}`);
         return chansetInfo;
 
     } catch (err) {
-        logger.info(`Error while user ${reqInfo.userid} requested to get changeset details with  ${reqInfo}`);
+        logger.info(`Error while user ${reqInfo.userId} requested to get changeset details`);
         throw err;
     }
 }
@@ -483,20 +482,24 @@ module.exports.getFileInfo = getFileInfo;
 
 
 
-async function getUserInfo(userId) {
+async function getUserInfo(params) {
     try {
-
-
-        if (userId == null || userId == undefined) {
-            throw new Error("User ID needed to query");
-        }
-
-        logger.info(`User details requested for ID ${userId}`);
-        var fileInfo = await users.findOne({ where: { id: userId } });
-        return fileInfo;
+        let userId = params.userId;
+        let email= params.email;
+        if(userId != undefined) {
+            logger.info(`User details requested for ID ${userId}`);
+            var fileInfo = await users.findOne({ where: { id: userId } });
+            return fileInfo;
+        } else if(email != undefined){
+            logger.info(`User details requested for email ${email}`);
+            var fileInfo = await users.findOne({ where: { email: email } });
+            return fileInfo;
+        } else {
+            throw new Error("UserID/Email must needed to query");
+        }       
 
     } catch (err) {
-        logger.info(`Error while getting user ${userId} details} :: error :${err.message}`);
+        logger.info(`Error while getting user details} :: error :${err.message}`);
         throw err;
     }
 }
@@ -606,3 +609,58 @@ async function updateBranchInfo(reqInfo) {
     }
 }
 module.exports.updateBranchInfo = updateBranchInfo;
+
+
+async function getAllChangeSetsByBranch(reqInfo) {
+    try {
+        const branchExists = await branches.findOne({where : { id:reqInfo.branchId}});
+        if( branchExists) {
+            var changesetInfo = /* await changesets.findAll({
+                   where: {
+                        user_id:reqInfo.userId,
+                        branchId: reqInfo.branchId
+                    },order: [
+                        ['createdAt', 'DESC']
+                    ],
+                    include : [
+                        {
+                          model: users,
+                          as: 'user',
+                          attributes: ['email'],
+                          through: {attributes: [id]}
+                          required:true
+                        }
+                    ]
+            }); */
+           await sequelize.query(`Select  "changesets"."id","changesets"."description", "changesets"."createdAt", "users"."email" from changesets as changesets  inner join users as users on users.id=changesets.user_id  where "changesets"."branchId"=${reqInfo.branchId} order by "changesets"."createdAt" desc`)        
+        }
+        logger.info(`User ${reqInfo.userId} requested to get all pullerequests.`);
+
+        return changesetInfo[0];
+    } catch (err) {
+        logger.error("Error while getting list of pullrequests :: " + err.message); //todo remove
+        throw err;
+    }
+}
+module.exports.getAllChangeSetsByBranch = getAllChangeSetsByBranch;
+
+async function getAllFilesByBranch(reqInfo) {
+    try {
+        const branchExists = await branches.findOne({where : { id:reqInfo.branchId}});
+        if( branchExists) {
+            var changesetInfo = await fileinfo.findAll({
+                   where: {
+                        branchId: reqInfo.branchId
+                    },order: [
+                        ['createdAt', 'DESC']
+                    ]
+            });
+        }
+        logger.info(`User ${reqInfo.userId} requested to get all pullerequests.`);
+        return changesetInfo;
+    } catch (err) {
+        logger.error("Error while getting list of pullrequests :: " + err.message); //todo remove
+        throw err;
+    }
+}
+module.exports.getAllFilesByBranch = getAllFilesByBranch;

@@ -49,6 +49,26 @@ const schema_getFileInfo = Joi.object({
 
 module.exports.schema_getFileInfo = schema_getFileInfo;
 
+const schema_getAllChangeSets = Joi.object({
+    userId: Joi.number().min(1).required(),
+    branchId: Joi.number().min(1).required()
+    // fileName : Joi.string().pattern(new RegExp('^[A-Za-z][A-Za-z0-9_-]{1,100}[A-Za-z0-9][.][a-zA-Z]+$')).required(),
+    
+});
+
+module.exports.schema_getAllChangeSets = schema_getAllChangeSets;
+
+
+
+const schema_getAllfiles = Joi.object({
+    userId: Joi.number().min(1).required(),
+    branchId: Joi.number().min(1).required()
+    // fileName : Joi.string().pattern(new RegExp('^[A-Za-z][A-Za-z0-9_-]{1,100}[A-Za-z0-9][.][a-zA-Z]+$')).required(),
+    
+});
+
+module.exports.schema_getAllfiles = schema_getAllfiles;
+
 
 const schema_getPullRequestsByUser = Joi.object({
     userId: Joi.number().min(1).required(),

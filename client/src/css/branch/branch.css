@@ -1,0 +1,139 @@
+.branchDetails{
+/*     text-align: left; */
+    align-content: center;
+    padding: 10px;
+    top: 60px;
+    /* height:91%; */
+    height: 91vh;
+    width: 250px;
+    position: absolute;
+    background-color:white;
+    border-right: 1px solid #dee2e6;
+}
+
+
+.branch-list-title{
+
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+    color:rgb(46, 46, 46);
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.branch-title{
+    font-size: 14px;
+    padding: 5px;
+    text-align: center; 
+    padding-bottom: 10px;   
+    border-bottom: 1px solid #e8eaec;;
+}
+
+.branch-title:hover{
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.changesetDetails{
+    margin-left: 250px;
+    padding-left: 10px;
+  
+}
+.active-branch{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.changeset-details-title {
+    text-align: center;
+    font-size: 16px;
+    color: #2e2e2e;
+    /* padding-left: 25px; */
+    padding-top: 5px;
+    font-weight: bold;
+}
+.branch-select-info{
+    margin-left:300px;
+    text-align: left;
+    padding-top: 30px;
+    color:gray;
+}
+.commits{
+    padding:5px;
+   
+    padding-right: 10px;
+    height: 83vh;
+    overflow: auto;
+    border: 1px solid #a3a4a663;
+}
+
+.commit {
+    align-items:center;
+    background-color:white;
+    margin:5px;
+    margin-bottom:10px;
+    padding-left: 25px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 6px 0px;
+}
+
+.commit-decription, .commit-created, .commit-made-by {
+    padding: 5px;
+    padding-left: 12px;
+    font-size: 15px;
+}
+.changeset-details-title{
+
+    padding-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 6px 0px;
+}
+.commit-made-by {
+    color:rgb(83, 107, 121);
+}
+.commit-created{
+    color:rgb(116, 116, 116);
+}
+.commit:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px 0px;
+
+}
+
+.commit-decription{
+    font-size: 17px;
+}
+.commit-decription:hover {
+    cursor: pointer;
+}
+
+.no-data{
+    padding-top: 50px;
+    margin-left: 300px;
+}
+
+.changed-file{
+    font-weight: bold;
+    margin-top:10px;
+}
+.file-changes{
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px 0px;
+}
+.line-changes{
+    
+    padding-left: 10px;
+}
+
+select{
+   
+    padding:5px;
+}
+.select-files-list, .updateOption{
+    margin-left:5px;
+    margin-right:5px;
+}
+input[type="text"] {
+   padding:5px;
+    margin-right:5px;
+}
+input[type="text"]:focus {
+    padding:5px;
+ }

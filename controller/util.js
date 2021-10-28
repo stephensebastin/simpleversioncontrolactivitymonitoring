@@ -5,23 +5,31 @@ const redisUtil = require('../redisUtil');
 
 async function processPush(pushInfo) {
     var userId = pushInfo.userId;
-    var token = pushInfo.token;
+    //var token = pushInfo.token;
     var pr_branch_id;
     var commitDetails = pushInfo.commitDetails;
 
     try {
         if (commitDetails != null && commitDetails.length > 0) {
             const result = await sequelize.transaction(async(t) => {
-                const pr = await pullrequests.findOne({ where: { pull_token: token } });
-                if (pr == null) {
+                /* const pr = await pullrequests.findOne({ where: { pull_token: token } }); */
+                const pr = await branches.findOne({ where: { id: pushInfo.branchId } });
+               /*  if (pr == null) {
                     throw new Error("Pull request details not present.. Cannot proceed checkin");
-                }
-                var pr_user_id = pr.userId;
+                } */
+                if (pr == null) {
+                    throw new Error("Branch details not present.. Cannot proceed checkin");
+                } 
+                const ur = await users.findOne({ where: { id: userId } });
+                if (ur == null) {
+                    throw new Error("User details not present.. Cannot proceed checkin");
+                } 
+                var pr_user_id = ur.id;
 
                 if (userId != pr_user_id) {
                     throw new Error("User ID not matches with pull token.. Cannot proceed checkin");
                 }
-                pr_branch_id = pr.branchId;
+                pr_branch_id = pr.id;
 
                 var valueFromRedis = await redisUtil.getValueFromRedis(pr_branch_id + '_branch_lock_push');
                 if (valueFromRedis != null && (valueFromRedis == true || valueFromRedis == 'true')) {

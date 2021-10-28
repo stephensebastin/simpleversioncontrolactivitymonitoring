@@ -2,7 +2,8 @@ const Joi = require('joi');
 
 const schema_push_changes = Joi.object({
     userId: Joi.number().min(1).required(),
-    token: Joi.string().pattern(new RegExp('^[a-z0-9]+[-][0-9a-z]+[-][0-9a-z]+[-][0-9a-z]+[-][a-z0-9]+$')).required(),
+    branchId: Joi.number().min(1).required(),
+   // token: Joi.string().pattern(new RegExp('^[a-z0-9]+[-][0-9a-z]+[-][0-9a-z]+[-][0-9a-z]+[-][a-z0-9]+$')).required(),
     //commitDetails:Joi.string()
     commitDetails: Joi.array().items(
         Joi.object({
@@ -31,6 +32,8 @@ const schema_push_changes = Joi.object({
         })
     )
 });
+
+
 
 module.exports.schema_push_changes = schema_push_changes;
 
