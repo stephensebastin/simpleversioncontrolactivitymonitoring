@@ -5,6 +5,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import Home from '../Home';
 import UserCreationModel from './UserCreationModel';
 import styles from '../../css/user/user.css'
+import {connect} from 'react-redux';
+
+import {UserProvider} from  '../context/UserContext'
+import { updateUserInfo } from '../../stores/actions/userinfo';
 
 toast.configure();
 
@@ -27,10 +31,11 @@ class Login extends Component {
         .then(response => {
 			response = response.data;
 			if(response.status == "success" && response.data) {
-                toast.success("Successfully Loggedin",{autoClose:5000})
+                toast.success("Successfully Loggedin",{autoClose:2000})
 				this.setState({
 					userinfo: response.data
 				})
+                this.props.updateUserInfo(response.data);
 			} else {
                 toast.error(response.message,{autoClose:5000})
 				this.setState({
@@ -71,11 +76,13 @@ class Login extends Component {
 
 
     render() {
-        if(this.state.userinfo && this.state.userinfo.id != undefined){
+        if(this.props.userInfo && this.props.userInfo.id != undefined){
             return (
+                <UserProvider value={this.props.userInfo}>
                 <div className="dashboard">
-                      <Home userId = {this.state.userinfo.id}/>
+                      <Home /* userId = {this.state.userinfo.id} *//>
                 </div>
+                </UserProvider>
               )
         } else if( this.state.showModel) {
            
@@ -100,4 +107,16 @@ class Login extends Component {
     }
 }
 
-export default Login
+const MapStateToProps = (state) => {
+    return {
+    userInfo: state.userInfo
+}
+};
+const MapDispatchToProps = (dispatch) => {
+    
+return {
+    updateUserInfo: (userInfo)=> dispatch(updateUserInfo(userInfo))
+}
+};
+export default connect(MapStateToProps, MapDispatchToProps)(Login);
+//export default Login

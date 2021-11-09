@@ -1,0 +1,152 @@
+.prInfoDiv {
+    border-left: 1px solid #dee2e6;
+    /* margin-left: 70%; */
+    margin-left: 61%;
+    padding-left: 10px;
+    position: absolute;
+    /* float: right; */
+    width: 38%;
+    
+}
+
+.prInfoTitle{
+  
+        padding-top: 5px;
+        margin-left: 20%;
+        width: 40%;
+        text-align: center;
+        /* padding-top: 30px; */
+        color: black;
+        font-weight: bold;
+        position: relative;
+}
+.prInfo{
+    padding: 5px;
+    padding-right: 1%;
+    padding-left: 10px;
+    height: 83vh;
+    overflow: auto;
+    border-top: 1px solid #a3a4a663;
+   /*  border: 1px solid #a3a4a663; */
+    
+}
+.pr{
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 2px 6px 0px;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+
+.pr-description, .pr-created, .pr-made-by,.pr-made-on {
+    padding: 5px;
+    padding-left: 12px;
+    font-size: 15px;
+}
+.pr-description{
+    font-size: 17px;
+    color: darkslategrey;
+}
+.pr-description:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+.pr-made-by {
+    color:rgb(83, 107, 121);
+}
+.pr-created{
+    color:rgb(116, 116, 116);
+}
+.pr:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px 0px;
+
+}
+
+.pr-made-on {
+    color:rgb(92, 92, 92);
+}
+
+
+.pr-commit-info{
+    padding: 15px;
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px 0px;   
+}
+
+
+.pr-commit-description, .pr-commit-created{
+    padding-left: 10px;
+}
+
+.pr-commit-info-title{
+    font-weight: 600;
+}
+.prDetailedInfo{
+    padding: 5px;
+    color: rgb(90, 92, 92);
+}
+
+.createPR{
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+
+.showPRButton, .pr-submit-button{
+    text-align: right;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+.prButtonDiv{
+    text-align: right;
+}
+
+.showPRButton:hover, .pr-submit-button:hover {
+    background-color: white;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.prInputs{
+    text-align: center;
+}
+
+
+
+.showPRButton:focus, .pr-submit-button:focus {
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.deletePR{
+text-align: right;
+padding: 5px;
+}
+
+.deletePRButton{
+
+    color: red;
+    /* font-weight: bold; */
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.deletePRButton:hover{
+    color: white;
+    background-color: red;
+}

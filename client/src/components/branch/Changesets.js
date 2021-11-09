@@ -6,7 +6,7 @@ import ChangesetInfoModel from './ChangesetInfoModel';
 import Commit from './Commit';
 toast.configure();
 
-export class Changesets extends Component {
+export class    Changesets extends Component {
     constructor(props) {
         super(props)
     
@@ -34,6 +34,12 @@ export class Changesets extends Component {
         })  */   
     }
     
+    handleOnClose = () =>{
+        this.setState({
+            ...this.state,
+            selectedCommitId:null
+        })
+    }
  
     render() {
         if(this.props.changesetInfo.length > 0) {
@@ -55,7 +61,7 @@ export class Changesets extends Component {
                     {(this.state.commitInfo)?(<CommitInfoModel commitInfo={this.state.commitInfo}/>):null}
                     </div> */}
                      </div>
-                    {(this.state.selectedCommitId)?(<ChangesetInfoModel branchId={this.props.branchInfo.branchId} changesetId={this.state.selectedCommitId}/>):null}
+                    {(this.state.selectedCommitId)?(<ChangesetInfoModel /* branchId={this.props.branchInfo.branchId}  */changesetId={this.state.selectedCommitId} onCloseModel={this.handleOnClose}/>):null}
                     </div> 
 
                     <Commit  branchInfo = {this.props.branchInfo}  userId={1} />

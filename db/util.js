@@ -14,6 +14,8 @@ async function initDB(operation) {
             logger.info("Database sync success");
         } else {
             await sequelize.authenticate();
+            await sequelize.sync({ alter: true });
+
             logger.info("Database Connected");
         }
     } catch (err) {
@@ -151,9 +153,12 @@ async function createBranch(branchInfo) {
 module.exports.createBranch = createBranch;
 
 
-async function pullBranch(params) {
+async function createPullRequest(params) {
     var userId = params.userId;
-    var branchName = params.branchName;
+    //var branchName = params.branchName;
+    var branchId = params.branchId;
+    var changesetId = params.changesetId;
+
     try {
 
         //map user to branch then directly query user mappings with branch 
@@ -164,13 +169,24 @@ async function pullBranch(params) {
                 throw new Error("User details not present");
             }
             var user_id = user.id;
-            const branch = await branches.findOne({ where: { name: branchName } });
+            const branch = await branches.findOne({ where: { id: branchId } });
             if (branch == null) {
                 throw new Error("Branch details not found");
             }
             var branch_id = branch.id;
 
-            const pullRequest = await pullrequests.create({ userId: user_id, branchId: branch_id }, { transaction: t });
+            const changeset = await changesets.findOne({ where: { id: changesetId, branchId: branch_id } });
+            if (changeset == null) {
+                throw new Error("Changeset details not found");
+            }
+
+            const pullrequestInfo = await pullrequests.findOne({ where: { userId: user_id, branchId: branch_id, changesetId: changesetId  } });
+            
+            if(pullrequestInfo) {
+                throw new Error("Pull request already created for the commit");
+            }
+          
+            const pullRequest = await pullrequests.create({ userId: user_id, branchId: branch_id, changesetId: changesetId, description: params.description }, { transaction: t });
             return pullRequest;
         }).then((value) => {
             logger.info("new pull request created by user  :: " + userId + " For branch " + branchId);
@@ -184,7 +200,7 @@ async function pullBranch(params) {
     }
 }
 
-module.exports.pullBranch = pullBranch;
+module.exports.createPullRequest = createPullRequest;
 //get branch details
 async function getBranchDetails(reqInfo) {
     try {
@@ -510,22 +526,42 @@ module.exports.getUserInfo = getUserInfo;
 async function getPullRequestsByUser(reqInfo) {
     try {
         var pullList = await pullrequests.findAll({
-            where: { userId: reqInfo.userId },
+            /* where: { userId: reqInfo.userId }, */
             order: [
                 ['createdAt', 'DESC']
+            ],
+            include: [
+                {
+                  model: branches,
+                  as: 'branch',
+                  required: false,
+                  attributes: [
+                    'name',
+                  ]
+                },
+                {
+                    model: users,
+                    as: 'user',
+                    required: false,
+                    attributes: [
+                      'email',
+                    ]
+                  }
             ]
+          
         });
 
         if (pullList.length > 0) {
-            var branchListArr = [];
+           /*  var branchListArr = [];
             for (var i = 0; i < pullList.length; i++) {
                 var dataValues = pullList[i].dataValues;
                 delete dataValues['createdAt'];
-                delete dataValues['updatedAt'];
+             //   delete dataValues['updatedAt'];
                 branchListArr.push(dataValues);
-            }
+            } */
             logger.info(`User ${reqInfo.userId} requested to get all pullerequests.`);
-            return branchListArr;
+           // return branchListArr;
+           return pullList;
         }
         return null;
     } catch (err) {
@@ -534,6 +570,53 @@ async function getPullRequestsByUser(reqInfo) {
     }
 }
 module.exports.getPullRequestsByUser = getPullRequestsByUser;
+
+async function getPullRequest(reqInfo) {
+    try {
+        var pullInfo = await pullrequests.findOne({
+            where: { id: reqInfo.prId },
+            order: [
+                ['createdAt', 'DESC']
+            ],
+            include: [
+                {
+                  model: branches,
+                  as: 'branch',
+                  required: false,
+                  attributes: [
+                    'name',
+                  ]
+                },
+                {
+                    model: users,
+                    as: 'user',
+                    required: false,
+                    attributes: [
+                      'email',
+                    ]
+                  },
+                  {
+                    model: changesets,
+                    as: 'changeset',
+                    required: false,
+                  }
+            ]
+          
+        });
+
+        if (pullInfo) {
+           
+            logger.info(`User ${reqInfo.userId} requested to get all pullerequests.`);
+           // return branchListArr;
+           return pullInfo;
+        }
+        return null;
+    } catch (err) {
+        logger.error("Error while getting list of pullrequests :: " + err.message); //todo remove
+        throw err;
+    }
+}
+module.exports.getPullRequest = getPullRequest;
 
 
 
@@ -634,11 +717,11 @@ async function getAllChangeSetsByBranch(reqInfo) {
             }); */
            await sequelize.query(`Select  "changesets"."id","changesets"."description", "changesets"."createdAt", "users"."email" from changesets as changesets  inner join users as users on users.id=changesets.user_id  where "changesets"."branchId"=${reqInfo.branchId} order by "changesets"."createdAt" desc`)        
         }
-        logger.info(`User ${reqInfo.userId} requested to get all pullerequests.`);
+        logger.info(`User ${reqInfo.userId} requested to get all changesets.`);
 
         return changesetInfo[0];
     } catch (err) {
-        logger.error("Error while getting list of pullrequests :: " + err.message); //todo remove
+        logger.error("Error while getting list of changesets :: " + err.message); //todo remove
         throw err;
     }
 }
@@ -656,11 +739,33 @@ async function getAllFilesByBranch(reqInfo) {
                     ]
             });
         }
-        logger.info(`User ${reqInfo.userId} requested to get all pullerequests.`);
+        logger.info(`User ${reqInfo.userId} requested to get all files.`);
         return changesetInfo;
+    } catch (err) {
+        logger.error("Error while getting list of files :: " + err.message); //todo remove
+        throw err;
+    }
+}
+module.exports.getAllFilesByBranch = getAllFilesByBranch;
+
+
+
+async function deletePullRequest(reqInfo) {
+    try {
+        var pullInfo = await pullrequests.destroy({
+            where: { id: reqInfo.prId }          
+        });
+
+        if (pullInfo) {
+           
+            logger.info(`User ${reqInfo.userId} requested to get all pullerequests.`);
+           // return branchListArr;
+           return pullInfo;
+        }
+        return 0;
     } catch (err) {
         logger.error("Error while getting list of pullrequests :: " + err.message); //todo remove
         throw err;
     }
 }
-module.exports.getAllFilesByBranch = getAllFilesByBranch;
+module.exports.deletePullRequest = deletePullRequest;

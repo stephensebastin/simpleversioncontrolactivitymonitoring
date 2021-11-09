@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
         static associate(models) {
             this.belongsTo(models.branches, { as: 'branch', onUpdate: 'CASCADE', onDelete: 'CASCADE' });
             this.belongsTo(models.users, { as: 'user', onUpdate: 'CASCADE', onDelete: 'CASCADE' });
+            this.belongsTo(models.changesets, { as: 'changeset', onUpdate: 'CASCADE', onDelete: 'CASCADE' });
 
             // define association here
         }
@@ -22,6 +23,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.UUID,
             defaultValue: UUIDV4
         },
+        description: {
+          type: DataTypes.STRING,
+          allowNull: false
+      }
         /* user_id: {
            type: DataTypes.INTEGER,
            allowNull: false,
@@ -38,6 +43,14 @@ module.exports = (sequelize, DataTypes) => {
              key: 'id',
            }
          },*/
+       /*   changeset_id: {
+          type: DataTypes.INTEGER,
+          allowNull: false,
+          references: {
+            model: 'changesets',
+            key: 'id',
+          }
+        } */
     }, {
         sequelize,
         modelName: 'pullrequests',

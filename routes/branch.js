@@ -123,7 +123,7 @@ module.exports = [
                     var deleteCount = await db.deleteBranch('name', valueToPass);
                 }
                 /* else {
-                                   throw new Error("ID or Name is mandotory");
+                                                       throw new Error("ID or Name is mandotory");
                                } */
                 accesslogger.logRequestDetails(request, 200, 'info');
 
@@ -154,22 +154,22 @@ module.exports = [
     },
     {
         method: 'POST',
-        path: '/api/branch/pull',
+        path: '/api/branch/createpullrequest',
         handler: async function(request, h) {
             var responseJSON = {};
             try {
                 var params = request.payload;
                 var validatedValue = await validateBranch.schema_pullrequest.validateAsync(params);
-                var token = await db.pullBranch(validatedValue);
+                var token = await db.createPullRequest(validatedValue);
                 accesslogger.logRequestDetails(request, 200, 'info');
                 if (token != null && token != undefined) {
                     responseJSON.status = "success";
-                    responseJSON.message = "Branch pulled successfully";
+                    responseJSON.message = "Pull Request successfully created";
                     responseJSON.pullToken = token;
                     return h.response(responseJSON);
                 } else {
                     responseJSON.status = "fail";
-                    responseJSON.message = "Branch cannot be pulled";
+                    responseJSON.message = "Pull Request cannot be created";
                     return h.response(responseJSON).code(200);
                 }
             } catch (err) {
@@ -285,7 +285,7 @@ module.exports = [
     },
     {
         method: 'GET',
-        path: '/api/branch/getpullrequestsbyuser',
+        path: '/api/branch/getpullrequests',
         handler: async function(request, h) {
             var responseJSON = {};
             try {
@@ -408,6 +408,70 @@ module.exports = [
                 responseJSON.message = err.message;
                 accesslogger.logRequestDetails(request, statusCode, 'error');
                 console.log(err)
+                return h.response(responseJSON).code(statusCode);
+            }
+        }
+    }, 
+      {
+        method: 'GET',
+        path: '/api/branch/getpullrequest',
+        handler: async function(request, h) {
+            var responseJSON = {};
+            try {
+                var params = request.query;
+                var validatedParam = await validateBranch.schema_getPullRequest.validateAsync(params);
+                var pullInfo = await db.getPullRequest(validatedParam);
+                accesslogger.logRequestDetails(request, 200, 'info');
+                if (pullInfo != null && pullInfo != undefined) {
+                    responseJSON.status = "success";
+                    responseJSON.data = pullInfo;
+                    return h.response(responseJSON);
+                } else {
+                    responseJSON.status = "fail";
+                    responseJSON.message = "Pull request details  not found";
+                    return h.response(responseJSON);
+                }
+
+            } catch (err) {
+                var statusCode = 500;
+                if (err.isJoi == true) {
+                    statusCode = 400;
+                }
+                responseJSON.status = "error";
+                responseJSON.message = err.message;
+                accesslogger.logRequestDetails(request, statusCode, 'error');
+                return h.response(responseJSON).code(statusCode);
+            }
+        }
+    },
+    {
+        method: 'DELETE',
+        path: '/api/branch/delete/pullrequest',
+        handler: async function(request, h) {
+            var responseJSON = {};
+            try {
+                var params = request.query;
+                var validatedParam = await validateBranch.schema_getPullRequest.validateAsync(params);
+                var pullInfo = await db.deletePullRequest(validatedParam);
+                accesslogger.logRequestDetails(request, 200, 'info');
+                if (pullInfo != null && pullInfo != undefined && pullInfo > 0 ) {
+                    responseJSON.status = "success";
+                    responseJSON.message = "Pull request deleted successfully";
+                    return h.response(responseJSON);
+                } else {
+                    responseJSON.status = "fail";
+                    responseJSON.message = "Pull request details not found";
+                    return h.response(responseJSON);
+                }
+
+            } catch (err) {
+                var statusCode = 500;
+                if (err.isJoi == true) {
+                    statusCode = 400;
+                }
+                responseJSON.status = "error";
+                responseJSON.message = err.message;
+                accesslogger.logRequestDetails(request, statusCode, 'error');
                 return h.response(responseJSON).code(statusCode);
             }
         }

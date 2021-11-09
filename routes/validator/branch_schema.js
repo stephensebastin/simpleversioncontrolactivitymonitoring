@@ -1,4 +1,5 @@
 const Joi = require('joi');
+const { join } = require('../branch');
 const schema_create = Joi.object({
     userId: Joi.number().min(0).required(),
     name: Joi.string().pattern(new RegExp('^[A-Z][A-Za-z0-9_]{1,50}[A-Z0-9]$')).required(),
@@ -16,9 +17,13 @@ module.exports.schema_delete = schema_delete;
 
 const schema_pullrequest = Joi.object({
     userId: Joi.number().min(0).required(),
-    branchName: Joi.string().pattern(new RegExp('^[A-Z][A-Za-z0-9_]{1,50}[A-Z0-9]$')).required(),
+    branchName: Joi.string().pattern(new RegExp('^[A-Z][A-Za-z0-9_]{1,50}[A-Z0-9]$')),
+    branchId: Joi.number().min(1),
+    changesetId: Joi.number().min(1).required(),
+    description: Joi.string().required(),
+
     //    branchId: Joi.number().min(0),
-}); //.or('branchName','branchId');
+}) .or('branchName','branchId');
 
 module.exports.schema_pullrequest = schema_pullrequest;
 
@@ -77,6 +82,15 @@ const schema_getPullRequestsByUser = Joi.object({
 });
 
 module.exports.schema_getPullRequestsByUser = schema_getPullRequestsByUser;
+
+const schema_getPullRequest = Joi.object({
+    userId: Joi.number().min(1).required(),
+    prId: Joi.number().min(1).required(),
+    // fileName : Joi.string().pattern(new RegExp('^[A-Za-z][A-Za-z0-9_-]{1,100}[A-Za-z0-9][.][a-zA-Z]+$')).required(),
+    // branchId: Joi.number().min(1).required(),
+});
+
+module.exports.schema_getPullRequest = schema_getPullRequest;
 
 
 const schema_update_branch = Joi.object({

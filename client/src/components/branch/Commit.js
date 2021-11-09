@@ -105,13 +105,13 @@ function Commit(props) {
     useEffect(() => {
         setShowModel(false);
         setAddFile(false);
-         setUpdateFile(false);
-         setDeleteFile(false);
-         setAddFilesDetails([]);
-          setUpdateFilesDetails([]);
-           setFilesList([]);
-           setFilesToDeleteList([]);
-           setupdateFilesDetailsWithFileNameMap(null);
+        setUpdateFile(false);
+        setDeleteFile(false);
+        setAddFilesDetails([]);
+        setUpdateFilesDetails([]);
+        setFilesList([]);
+        setFilesToDeleteList([]);
+        setupdateFilesDetailsWithFileNameMap(null);
     },[props]);
 
     const handleFileUpdateChanges = () =>{
@@ -283,13 +283,11 @@ function Commit(props) {
              })
              .catch(err => {
 
-                 if(err.response.data){
+                 if(err.response && err.response.data){
                     toast.error(err.response.data.message, 3000);
                  } else{
                      toast.error(err.message, 3000);
                  }
-                 
-
              })
         }
     }
